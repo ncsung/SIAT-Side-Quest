@@ -20,7 +20,8 @@ const BasicsOfMotion = () =>{
 
             <AnimatePresence mode="popLayout" >
                 {isVisisble && (
-                <motion.div
+                <motion.img
+           
                 initial= {{
                     rotate: '0deg',
                     scale: 0,
@@ -46,8 +47,10 @@ const BasicsOfMotion = () =>{
                     height: 150,
                     background: "black",
                 }}
+                src = "./src/assets/questmotif.svg"
+                alt = "sidequest icon"
                 >
-                </motion.div>
+                </motion.img>
                 )}
             </AnimatePresence>
         </div>
