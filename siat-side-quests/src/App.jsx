@@ -1,8 +1,8 @@
 import BasicsOfMotion from "./BasicsOfMotion";
-
+import Fetch from "./fetch";
 
 function App() {
-  return(<BasicsOfMotion/>);
+  return(<Fetch/>);
 }
 
 export default App
