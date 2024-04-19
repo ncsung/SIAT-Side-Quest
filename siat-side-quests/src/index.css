@@ -1,4 +1,26 @@
-section{
-    height: 100vh;
-    scroll-snap-align: center;
+:root {
+    /* Usage of the :root class and CSS Variables was covered on Mozilla docs
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+    --primary-black: #050206;
+    --secondary-black: #0C0C11;
+    --primary-gray: #3B3B3B;
+    --accent-colour: #9A8174;
+    --white-colour: #FEFEFE;
 }
+* {
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+section{
+    height: 70vh;
+    scroll-snap-align: center;
+  }
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding-top: 24vh;
+}
+  

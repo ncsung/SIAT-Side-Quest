@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion , AnimatePresence} from "framer-motion";
 import "./style.css";
 
 
@@ -11,15 +11,16 @@ const Overlay = ({ isOpen, onClose, children }) => {
 
   return (
     <>
+    <AnimatePresence>
       {isOpen && (
         <div className="overlay-frame">
             <motion.div
-            className="overlay"
-            initial={{ opacity: 0 }}
-            animate={{ y: "-10px", opacity: 1 }}
-            transition={{type: 'spring', bounce: 0.3, duration:0.6}}
-            exit={{ opacity: 0 }
-            }
+              key="box"
+              className="overlay"
+              initial={{ y: "20px", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: "20px", opacity: 0,transition: {duration: 0.1}}}
+              transition={{type: 'spring', bounce: 0.4, duration:0.9}}
             >
             <div className="overlay-content" onClick={handleClick}>
                 {children}
@@ -28,6 +29,7 @@ const Overlay = ({ isOpen, onClose, children }) => {
             </motion.div>
         </div>
       )}
+      </AnimatePresence>
     </>
   );
 };
