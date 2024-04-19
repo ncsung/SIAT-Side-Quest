@@ -54,7 +54,7 @@
     .overlay{
       margin: 70px auto;
       padding: 20px;
-      background-color: lightblue;
+      background-color: rgb(250,249,249);
       width: 70vw;
       height: 70vh;
     }
