@@ -1,10 +1,62 @@
-.card-box {
-  
+.card-frame {
+  display: flex;
+  flex-flow: row wrap; 
+  }
+
+.card-box{
   background-color: #be2f2f;
   border-radius: 14px;
   height: 397px;
   left: 0;
-  position: fixed;
+  /*position: fixed;*/
+
   top: 0;
   width: 347px;
+  color: #ffffff;
+  font-family: "ES Rebond Grotesque TRIAL-Light", Helvetica;
+  font-size: 13.1px;
+  font-weight: 300;
   }
+
+.card-box2{
+    background-color: #be2f2f;
+    border-radius: 14px;
+    height: 397px;
+    left: 0;
+    /*position: fixed;*/
+  
+    top: 0;
+    width: 347px;
+    color: #ffffff;
+    font-family: "ES Rebond Grotesque TRIAL-Light", Helvetica;
+    font-size: 13.1px;
+    font-weight: 300;
+    }
+
+    .card-box2:hover{
+      transform: rotateY( 180deg ) ;
+      transition: transform 0.5s;
+    }
+
+    .overlay-frame{
+      position: fixed;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      background: rgba(66, 66, 66, 0.7);
+    }
+
+    .overlay{
+      margin: 70px auto;
+      padding: 20px;
+      background-color: lightblue;
+      width: 70vw;
+      height: 70vh;
+    }
+
+

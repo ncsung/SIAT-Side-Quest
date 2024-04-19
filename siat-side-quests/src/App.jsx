@@ -1,9 +1,16 @@
-import Card from './components/card/Card'
+import Card from './components/card/Card.jsx'
 
 function App() {
   return (
     <>
-      <Card/>
+    <section> Banner </section>
+
+    <section> 
+    Featured Alumni & Students
+      <div className="cards">
+        <Card/>
+      </div>  
+    </section>
     </>
   )
 }

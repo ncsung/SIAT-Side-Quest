@@ -2,30 +2,37 @@ import React from "react";
 import "./style.css";
 import { motion } from 'framer-motion';
 import { useState } from "react";
+import Overlay from "./Overlay.jsx"
 
 export const Card = () => {
     const [flip, setFlip] = useState(true);
-  return (
-    <motion.div className="card-box"
-    onClick= {() => setFlip((prevState) => !prevState)}
-    transition={{type: "sping", duration:0.3}}
-    animate={{ rotateY: flip ? 0 : 180}}
-    >
+    const [isOpen, setIsOpen] = useState(false);
 
-        <h3> David </h3>
-        <ul className="card-tags">
-            <li>Tags</li>
-        </ul>
-        <h4>Favourite Classes</h4>
-        <p>IAT 438, IAT 333, italiadesign</p>
-        <h4>Business of Design</h4>
-        <p>00000</p>
-        <h4>Degree</h4>
-        <p>B.A. with Concentration in Design </p>
-        <a href=""> davidwaizel.ca </a>
+    const toggleOverlay = () => {
+        setIsOpen(!isOpen);
+      };
 
-    </motion.div>
-  );
+    return (
+        <>
+        <Overlay isOpen={isOpen} onClose={toggleOverlay}> 
+            <h2>Content in Overlay</h2>
+        </Overlay>
+        <div className = "card-frame">
+            {/* <motion.div className="card-box"
+            onClick= {() => setFlip((prevState) => !prevState)}
+            transition={{type: 'spring', bounce: 0.4, duration:0.6}}
+            animate={{ rotateY: flip ? 0 : 180}}
+            >
+
+            </motion.div>         */}
+
+            <div className="card-box"
+            onClick= {toggleOverlay} 
+            >
+            </div>            
+        </div>
+        </>
+    );
 };
 
 export default Card
