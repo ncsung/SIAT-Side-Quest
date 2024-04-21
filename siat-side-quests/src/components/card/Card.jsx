@@ -3,8 +3,15 @@ import "./style.css";
 import { motion } from 'framer-motion';
 import { useState } from "react";
 import Overlay from "./Overlay.jsx"
+import davidImg from "/davidProfile.png"
 
-export const Card = () => {
+export const Card = ({imgSrc,
+                    imgAlt,
+                    name,
+                    role,
+                    workHistory,
+                    skills
+}) => {
     const [flip, setFlip] = useState(true);
     const [isOpen, setIsOpen] = useState(false);
 
@@ -17,20 +24,20 @@ export const Card = () => {
         <Overlay isOpen={isOpen} onClose={toggleOverlay}> 
             <h2>Content in Overlay</h2>
         </Overlay>
-        <div className = "card-frame">
-            {/* <motion.div className="card-box"
-            onClick= {() => setFlip((prevState) => !prevState)}
-            transition={{type: 'spring', bounce: 0.4, duration:0.6}}
-            animate={{ rotateY: flip ? 0 : 180}}
-            >
-
-            </motion.div>         */}
-
-            <div className="card-box"
-            onClick= {toggleOverlay} 
-            >
-            </div>            
-        </div>
+            <div className="card-pp-div">
+                <div className="card-profile-mask">
+                    <img className="card-profile-picture" src={imgSrc} alt ={imgAlt}></img>
+                </div>
+            </div>
+            <div className="card-content">
+                <h2 className="cardName">{name}</h2>
+                <p className="red-text"> {role}</p>
+                <p className="red-text"> {workHistory}</p>
+            </div>
+            <div className="card-foot">
+                <p>{skills}</p>
+                <a onClick={toggleOverlay}> learn more</a>
+            </div>     
         </>
     );
 };

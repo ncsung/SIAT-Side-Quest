@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "imgSrc":"https://media.licdn.com/dms/image/D5603AQEDW56kCC1Vhw/profile-displayphoto-shrink_800_800/0/1676266438298?e=1718841600&v=beta&t=mVReRtLMQ6YeeD6VQqzd3qC433CFuCxjoR1VA2ve9xE",
+        "imgAlt":"a headshot of David Waisel",
+        "name": "David Waizel",
+        "role": "Freelance Brand Strategist; UX Designer; ",
+        "workHistory": "Previously @ SIAT Advising",
+        "skills": ["UX", "Project Management"]
+    },
+    {
+        "id": 2,
+        "imgSrc":"https://media.licdn.com/dms/image/D5603AQG4F7hdSluo8A/profile-displayphoto-shrink_800_800/0/1697156843992?e=1719446400&v=beta&t=P38MHWaMKE1UI9BZi1U8OqplVyH38PP2-f9niX4fVtM",
+        "imgAlt":"a headshot of Jaden Lee",
+        "name": "Jaden Lee",
+        "role": "Motion + Interaction Designer; ",
+        "workHistory": "Previously @ Riot Games & IATSU",
+        "skills": ["AE", "Figma"]
+    },
+    {
+        "id": 3,
+        "imgSrc":"https://media.licdn.com/dms/image/D5603AQECHFN_ZPyjfw/profile-displayphoto-shrink_800_800/0/1686378330957?e=1718841600&v=beta&t=dA9CMtjW52mLUlK1W8PuVwyoZt8nqDn5tlNdrrPZTO8",
+        "imgAlt":"a headshot of Megan Yung",
+        "name": "Megan Yung",
+        "role": "IAT-Business Joint Major;",
+        "workHistory": "Previously @ SMA as VP of Design",
+        "skills": ["ART", "KICKING"]
+    },
+    {
+        "id": 4,
+        "imgSrc":"https://media.licdn.com/dms/image/D5603AQEDW56kCC1Vhw/profile-displayphoto-shrink_800_800/0/1676266438298?e=1718841600&v=beta&t=mVReRtLMQ6YeeD6VQqzd3qC433CFuCxjoR1VA2ve9xE",
+        "imgAlt":"a headshot of David Waisel",
+        "name": "David Waizel",
+        "role": "Freelance Brand Strategist; UX Designer; ",
+        "workHistory": "Previously @ SIAT Advising",
+        "skills": ["UX", "Project Management"]
+    },
+    {
+        "id": 5,
+        "imgSrc":"https://media.licdn.com/dms/image/D5603AQG4F7hdSluo8A/profile-displayphoto-shrink_800_800/0/1697156843992?e=1719446400&v=beta&t=P38MHWaMKE1UI9BZi1U8OqplVyH38PP2-f9niX4fVtM",
+        "imgAlt":"a headshot of Jaden Lee",
+        "name": "Jaden Lee",
+        "role": "Motion + Interaction Designer; ",
+        "workHistory": "Previously @ Riot Games & IATSU",
+        "skills": ["AE", "Figma"]
+    },
+    {
+        "id": 6,
+        "imgSrc":"https://media.licdn.com/dms/image/D5603AQECHFN_ZPyjfw/profile-displayphoto-shrink_800_800/0/1686378330957?e=1718841600&v=beta&t=dA9CMtjW52mLUlK1W8PuVwyoZt8nqDn5tlNdrrPZTO8",
+        "imgAlt":"a headshot of Megan Yung",
+        "name": "Megan Yung",
+        "role": "IAT-Business Joint Major;",
+        "workHistory": "Previously @ SMA as VP of Design",
+        "skills": ["ART", "KICKING"]
+    },
+    {
+        "id": 7,
+        "imgSrc":"https://media.licdn.com/dms/image/D5603AQEDW56kCC1Vhw/profile-displayphoto-shrink_800_800/0/1676266438298?e=1718841600&v=beta&t=mVReRtLMQ6YeeD6VQqzd3qC433CFuCxjoR1VA2ve9xE",
+        "imgAlt":"a headshot of David Waisel",
+        "name": "David Waizel",
+        "role": "Freelance Brand Strategist; UX Designer; ",
+        "workHistory": "Previously @ SIAT Advising",
+        "skills": ["UX", "Project Management"]
+    },
+    {
+        "id": 8,
+        "imgSrc":"https://media.licdn.com/dms/image/D5603AQG4F7hdSluo8A/profile-displayphoto-shrink_800_800/0/1697156843992?e=1719446400&v=beta&t=P38MHWaMKE1UI9BZi1U8OqplVyH38PP2-f9niX4fVtM",
+        "imgAlt":"a headshot of Jaden Lee",
+        "name": "Jaden Lee",
+        "role": "Motion + Interaction Designer; ",
+        "workHistory": "Previously @ Riot Games & IATSU",
+        "skills": ["AE", "Figma"]
+    },
+    {
+        "id": 9,
+        "imgSrc":"https://media.licdn.com/dms/image/D5603AQECHFN_ZPyjfw/profile-displayphoto-shrink_800_800/0/1686378330957?e=1718841600&v=beta&t=dA9CMtjW52mLUlK1W8PuVwyoZt8nqDn5tlNdrrPZTO8",
+        "imgAlt":"a headshot of Megan Yung",
+        "name": "Megan Yung",
+        "role": "IAT-Business Joint Major;",
+        "workHistory": "Previously @ SMA as VP of Design",
+        "skills": ["ART", "KICKING"]
+    }
+  ]

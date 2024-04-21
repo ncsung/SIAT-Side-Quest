@@ -1,0 +1,32 @@
+.nav-frame{
+  position: sticky;
+  display: flex;
+  flex-flow: column;
+  top: 0;
+  align-self: flex-start;
+  width: 10vw;
+  overflow: hidden;
+  justify-items: left;
+  align-items: start;
+  margin-right: 1px;
+  height:92.2vh;
+}
+
+.nav-item{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  padding-left: 1rem;
+  margin: 1px 0px 1px 1px;
+  background-color: var(--primary-white);
+  border-right: 1px var(--primary-red);
+}
+
+
+
+
+
+

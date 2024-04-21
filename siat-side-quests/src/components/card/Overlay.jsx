@@ -13,7 +13,13 @@ const Overlay = ({ isOpen, onClose, children }) => {
     <>
     <AnimatePresence>
       {isOpen && (
-        <div className="overlay-frame">
+        <motion.div className="overlay-frame"
+        key="box"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0,transition: {duration: 0.1}}}
+        transition={{type: 'ease', duration:0.3}}
+              >
             <motion.div
               key="box"
               className="overlay"
@@ -27,7 +33,7 @@ const Overlay = ({ isOpen, onClose, children }) => {
                 <button onClick={onClose}>Close</button>
             </div>
             </motion.div>
-        </div>
+        </motion.div>
       )}
       </AnimatePresence>
     </>

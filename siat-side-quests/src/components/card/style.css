@@ -1,42 +1,61 @@
-.card-frame {
+.card{
   display: flex;
-  flex-flow: row wrap; 
-  }
-
-.card-box{
-  background-color: #be2f2f;
+  flex-direction: column;
+  background-color: var(--primary-white);
   border-radius: 14px;
-  height: 397px;
+  height: min-content;
   left: 0;
-  /*position: fixed;*/
-
   top: 0;
-  width: 347px;
-  color: #ffffff;
-  font-family: "ES Rebond Grotesque TRIAL-Light", Helvetica;
-  font-size: 13.1px;
-  font-weight: 300;
+  padding: 1rem 1.1rem ;
+  margin: 1px 0px 1px 1px;
+  width: 33%;
+  overflow: hidden;
   }
 
-.card-box2{
-    background-color: #be2f2f;
-    border-radius: 14px;
-    height: 397px;
-    left: 0;
-    /*position: fixed;*/
+.card p{
+  font-family: "ABCMonumentGrotesk-Regular";
+}
+
+.card-content{
+  position: relative;
+  padding: 0;
+  margin: 0.2rem 0;
+  height: min-content;
+}
+
+.card-foot{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-pp-div{
+  display: flex;
   
-    top: 0;
-    width: 347px;
-    color: #ffffff;
-    font-family: "ES Rebond Grotesque TRIAL-Light", Helvetica;
-    font-size: 13.1px;
-    font-weight: 300;
-    }
+  overflow: hidden;
+  height: 18em;
+}
 
-.card-box2:hover{
-    transform: rotateY( 180deg ) ;
-    transition: transform 0.5s;
-  }
+.card-profile-picture{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  align-self: center;
+  
+}
+
+.card-profile-mask {
+  position: relative; 
+  top:40px;
+  -webkit-mask-image: url(../../assets/profilemask.svg);
+  mask-image: url(../../assets/profilemask.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-size: auto;
+  -webkit-mask-size: 85% 85%;
+  align-self: center;
+}
 
 .overlay-frame{
     position: fixed;
@@ -49,14 +68,12 @@
     right: 0;
     height: 100vh;
     background: rgba(66, 66, 66, 0.7);
-  }
+}
 
-    .overlay{
+.overlay{
       margin: 70px auto;
       padding: 20px;
       background-color: rgb(250,249,249);
       width: 70vw;
       height: 70vh;
-    }
-
-
+}

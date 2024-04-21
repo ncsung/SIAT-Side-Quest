@@ -1,26 +1,216 @@
+/* TODO: see if there is a better way to reduce redundant code */
+
 :root {
-    /* Usage of the :root class and CSS Variables was covered on Mozilla docs
-    https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
-    --primary-black: #050206;
-    --secondary-black: #0C0C11;
+    --primary-red: #be2d2d;
+    --primary-white: rgba(250, 249, 249, 1);
     --primary-gray: #3B3B3B;
     --accent-colour: #9A8174;
     --white-colour: #FEFEFE;
 }
+
 * {
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+
+/* @font-face{
+    font-family: "Regular"; 
+    src: local("ABCMonumentGrotesk-Regular-Trial"),
+    local("ABCMonumentGrotesk-Medium-Trial"),
+    local("ESRebondGrotesqueTRIAL-Medium"),
+      url("./font/ABCMonumentGrotesk-Regular-Trial.woff") format("woff2"),
+      url("./fonts/ABCMonumentGrotesk-Medium-Trial.woff") format("woff2"),
+      url("./fonts/ESRebondGrotesqueTRIAL-Medium.otf") format("opentype");
+  } */
+
+@font-face{
+    font-family: "ABCMonumentGrotesk-Regular"; 
+    src: local("ABCMonumentGrotesk-Regular-Trial"),
+      url("./fonts/ABCMonumentGrotesk-Regular-Trial.woff") format("woff");
+  }  
+
+@font-face{
+    font-family: "ABCMonumentGrotesk-Medium"; 
+    src: local("ABCMonumentGrotesk-Regular-Trial"),
+    url("./fonts/ABCMonumentGrotesk-Medium-Trial.woff") format("woff2");
+}  
+
+@font-face{
+    font-family: "ESRebondGrotesqueTRIAL-Medium"; 
+    src: local("ABCMonumentGrotesk-Regular-Trial"),
+    url("./fonts/ESRebondGrotesqueTRIAL-Medium.otf") format("opentype");
+}  
+
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: #be2d2d;
+}
+
+h1{
+    font-family: "ESRebondGrotesqueTRIAL-Medium";
+	font-size: 24px;
+    color: var(--primary-red);
+	font-weight: bold;
+}
+
+h2{
+    font-family: "ESRebondGrotesqueTRIAL-Medium";
+	font-size: 20px;
+    color: var(--primary-red);
+	font-weight: bold;
+}
+
+p{
+    font-family: "ABCMonumentGrotesk-Regular";
+    font-size: 1rem;
+}
+
+.red-text{
+    color: var(--primary-red);
+}
+
+p.strong{
+    font-size: 2.4rem;
+    
+}
+
+ul{
+    list-style: none;
+}
+
 section{
-    height: 70vh;
-    scroll-snap-align: center;
-  }
+    height: 100vh;
+    /* scroll-snap-align: center; */
+}
+
+.site-wrapper{
+    display: flex;
+}
+
+.nav{
+    position: fixed;
+    flex-grow: 1;
+}
+.banner-wrapper{
+    border-left: 1px; 
+    flex-shrink: 4;
+}
+.subject-bar{
+    display: flex;
+    height: min-content;
+}
+
+.subject-bar-item{
+    top: 87px;
+	left: 441px;
+	width: 138px;
+	height: 5vh;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #be2d2d;
+	background:rgba(249.69,248.65,248.65,1);
+}
+
+.subject-item-long{
+    width: 100%
+}
 
 .banner{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    padding-top: 24vh;
 }
+
+.banner-section1{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background:rgba(249.69,248.65,248.65,1);
+    height: 35.8vh; 
+    width: 100%;
+}
+
+
+.banner-section2{
+    display: flex;
+    height: 23.4vh;
+    width: 100%;
+    margin-top: 1px;
+}
+
+.list-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.section2-panel{
+    background:rgba(249.69,248.65,248.65,1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 50%;
+    border-radius: 6px; 
+    height: 100%;
+}
+
+.right-panel{
+    margin-left: 1.1px;
+}
+
+.content{
+    position: relative;
+    padding: 0;
+    padding-left: 1rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    
+}
+
+.similiar-career-link{
+    margin:0;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.content-body{
+    margin-top: 0;
+}
+
+.scroll-section{
+    background:rgba(249.69,248.65,248.65,1);
+    height: 28vh;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 1px;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.cards-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.cards{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.white-space{
+    width: 6.3vw;
+    background-color: var(--primary-white);
+    flex-grow: 4;
+    border:1px var(--primary-red);
+}
+
   

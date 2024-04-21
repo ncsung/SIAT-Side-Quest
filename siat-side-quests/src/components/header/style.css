@@ -1,0 +1,15 @@
+.header-frame{
+    overflow: hidden;
+    display: flex;
+    gap: 50px;
+    height: 7.8vh;
+    background:var(--primary-white)
+}
+
+#header-icon{
+    flex-grow: 4;
+}
+.header-frame a{
+    justify-self: end;
+    align-self: center;
+}
