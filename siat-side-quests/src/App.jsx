@@ -7,12 +7,16 @@ import communicationIcon from "/communication-icon.svg"
 import researchIcon from "/research-icon.svg"
 import visualDesignIcon from "/visualdesign-icon.svg"
 import "./fonts/ABCMonumentGrotesk-Regular-Trial.woff"
+import "./fonts/ABCMonumentGrotesk-Medium-Trial.woff"
+import "./fonts/ESRebondGrotesqueTRIAL-Medium.otf"
 import alumniData from "./assets/alumni/alumni.json"
+import Resources from "./assets/alumni/resources.json"
 import { useState, useEffect } from "react";
 
 function App() {
   const [alumniDataState, setAlumniData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [resourceDataState, setResourceData] = useState([]);
+
   useEffect(() => {
     // Simulating fetching data from an API endpoint
     // Replace this with actual data fetching logic
@@ -21,7 +25,7 @@ function App() {
         
         // Update state with fetched data
         setAlumniData(alumniData);
-        setIsLoading(false);
+        setResourceData(Resources);
       } catch (error) {
         console.error('Error fetching alumni data:', error);
         setIsLoading(false);
@@ -95,8 +99,58 @@ function App() {
           </div>
         </div>
         
-        <section> 
-              <Resource/>
+        <section>
+          <div className="resource">
+              <div className="resource-disc">
+                <p>Inspiration</p>
+                <p className= "strong "> These resources provides different perspectives on ways to approach your craft.</p >
+              </div>
+ 
+  
+          <div className="resource-three-col col-header">
+              <p className="three-col-child resources-tag">Resources</p>
+              <p className="three-col-child ">Category</p>
+              <p className="three-col-child right-aligned">Alumni Endorsement</p>
+            </div>
+                {resourceDataState.map(resource => {
+                  return(
+                    <div className="resource-three-col resource-card" key = {resource.id}>
+                      <Resource imgSrc={resource.imgSrc}
+                                imgAlt={resource.imgAlt}
+                                resourceName={resource.resourceName}
+                                description={resource.description}
+                                categories={resource.categories}
+                                />
+                    </div>
+                  )
+                })}
+                <div className="three-coll-small">
+                  <div className="extra-resource-links">
+                    <p className="red-text">Inspiration</p>
+                    <ul>
+                      <li><a href="#"> extra resource link</a></li>
+                      <li><a href="#"> extra resource link</a></li>
+                      <li><a href="#"> extra resource link</a></li>
+                      </ul>
+                  </div>
+                  <div className="extra-resource-links">
+                    <p className="red-text">Inspiration</p>
+                    <ul>
+                      <li><a href="#"> extra resource link</a></li>
+                      <li><a href="#"> extra resource link</a></li>
+                      <li><a href="#"> extra resource link</a></li>
+                      </ul>
+                  </div>
+                  <div className="extra-resource-links">
+                    <p className="red-text">Inspiration</p>
+                    <ul>
+                      <li><a href="#"> extra resource link</a></li>
+                      <li><a href="#"> extra resource link</a></li>
+                      <li><a href="#"> extra resource link</a></li>
+                      </ul>
+                  </div>
+                </div>
+          </div>
         </section>
 
       </div>

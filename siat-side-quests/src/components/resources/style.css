@@ -1,25 +1,42 @@
-.resource-div{
+.resource-three-col{
     display: flex;
     flex-direction: row;
-    padding-left: 5.8rem;
     background-color: var(--primary-white);
-    justify-content: flex-start;
     align-items: center;
 }
+
+.three-col-child{
+    width: 23.7vw;
+}
+
+h3.resource-content{
+    font-family: "ESRebondGrotesqueTRIAL-Medium";
+}
+
 .resource-content{
     display: flex;
-    padding-left: 1rem;
-    padding-right: 20rem;
     flex-direction: column;
     justify-content: center;
-    min-width: fit-content;
+    width: 23.7vw;
+    padding-left: 20px;
 }
 
-.resource-header{
-    padding: 2rem 0;
-    margin-top: 1px;
+.categories-col{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 20%;
+    gap: 5px;
 }
 
-.resource-header p{
-    padding-left: 5.8rem;
+.resource-content-wrapper{
+    display: flex;
+    direction: row;
+    width: 32.1vw;
 }
+
+
+
+
+

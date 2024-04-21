@@ -1,22 +1,27 @@
 import "./style.css"
-import SampleImg from "/resource-sample.png"
 import Tag from "../Tag.jsx"
 
-function Resource(){
+export const Resource = ({imgSrc, imgAlt, resourceName,
+                    description, categories}) =>
+{
     return(
-        <>
-        <div className="resource-div resource-header">
-            <p className= "strong "> Inspiration provides different perspectives on ways to approach your craft.</p >
-        </div>
-        <div className="resource-div">
-            <img src={SampleImg} alt="sample img"></img>
+        <>  
+        <div className="resource-content-wrapper">
+            <img src={imgSrc} alt={imgAlt}></img>
             <div className="resource-content">
-                <h3> Weekly Links and Websites</h3>
-                <p>A weekly-updated inspiration board of web 
-                    interactions.</p>
+                <h3 className="red-text"> {resourceName}</h3>
+                <p>{description}</p>
             </div>
-            <Tag category={"Visual Design"}/>
-        </div>   
+        </div>
+            <div className="categories-col">
+                {
+                    categories.map((category, i) =>{
+                        return(
+                        <Tag key = {i} category={category}/>
+                        )   
+                    })
+                }
+            </div> 
         </>
     );
 }

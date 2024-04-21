@@ -65,6 +65,10 @@ h2{
 	font-weight: bold;
 }
 
+ul{
+    margin:0;
+    padding: 0;
+}
 h3{
     margin:0;
 }
@@ -73,6 +77,14 @@ p{
     font-family: "ABCMonumentGrotesk-Regular";
     font-size: 1rem;
     margin: 0;
+}
+
+p.right-aligned{
+    text-align: right;
+}
+
+p.center-aligned{
+    text-align: center;
 }
 
 .red-text{
@@ -86,7 +98,7 @@ p{
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
 	border-radius: 15px;
-	border: 2px solid #be2d2d;
+	border: 1px solid #be2d2d;
     padding: 6px 6px;
 }
 
@@ -228,4 +240,47 @@ section{
     background-color: var(--primary-white);
     flex-grow: 4;
     border:1px var(--primary-red);
+}
+
+.resource{
+    padding: 0 5.9rem 5.8rem 5.9rem ;
+    background-color: var(--primary-white);
+    margin-top: 1px;
+}
+.resources-tag{
+    width: 32.1vw;
+}
+.resource-cards{
+    margin-bottom: 22px;
+}
+
+.resource-card{
+    margin-bottom: 22px;
+}
+
+.resource-disc{
+    padding-top: 3em;
+    padding-bottom: 3.6em;
+}
+
+.col-header{
+    padding-bottom: 1em;
+}
+
+.col-header p{
+    font-family: "ESRebondGrotesqueTRIAL-Medium";
+}
+
+.extra-resource-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.three-coll-small{
+    display: flex;
+    flex-flow: row;
+    gap:20%;
+    width: 50%;
+    justify-content: space-between;
 }

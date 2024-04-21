@@ -1,0 +1,27 @@
+[
+    {
+        "id": 0,
+        "imgSrc":"/resource-sample.png",
+        "imgAlt":"Icon for resource",
+        "resourceName": "Weekly Links and Websites",
+        "description": "A weekly-updated inspiration board of web interactions.",
+        "categories": ["Visual Design", "Branding"]
+    } ,
+    {
+        "id": 1,
+        "imgSrc":"/resource-sample2.png",
+        "imgAlt":"Icon for resource",
+        "resourceName": "Inspiration Grid",
+        "description": "Curated projects around branding and typography.",
+        "categories": ["Visual Design", "UX Design"]
+    } ,
+    {
+        "id": 2,
+        "imgSrc":"/resource-sample3.png",
+        "imgAlt":"AEReference icon",
+        "resourceName": "AEReference",
+        "description": "A hub for different plugins, websites, and resources.",
+        "categories": ["resource hub", "inspiration", "software", "plugins"]
+    }
+
+]
