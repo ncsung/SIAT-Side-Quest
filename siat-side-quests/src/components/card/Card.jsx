@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useState } from "react";
 import Overlay from "./Overlay.jsx"
 import davidImg from "/davidProfile.png"
-
+import Tag from "../Tag.jsx"
 export const Card = ({imgSrc,
                     imgAlt,
                     name,
@@ -35,7 +35,11 @@ export const Card = ({imgSrc,
                 <p className="red-text"> {workHistory}</p>
             </div>
             <div className="card-foot">
-                <p>{skills}</p>
+                {skills.map( (skill, index) => {
+                    return(
+                        <Tag key= {index} category={skill}/>
+                    )
+                })}
                 <a onClick={toggleOverlay}> learn more</a>
             </div>     
         </>

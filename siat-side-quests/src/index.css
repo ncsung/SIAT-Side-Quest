@@ -65,13 +65,29 @@ h2{
 	font-weight: bold;
 }
 
+h3{
+    margin:0;
+}
+
 p{
     font-family: "ABCMonumentGrotesk-Regular";
     font-size: 1rem;
+    margin: 0;
 }
 
 .red-text{
     color: var(--primary-red);
+}
+
+.tag{
+    text-align: center;
+    -ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 2px solid #be2d2d;
+    padding: 6px 6px;
 }
 
 p.strong{
@@ -96,10 +112,12 @@ section{
     position: fixed;
     flex-grow: 1;
 }
+
 .banner-wrapper{
     border-left: 1px; 
     flex-shrink: 4;
 }
+
 .subject-bar{
     display: flex;
     height: min-content;
@@ -138,7 +156,6 @@ section{
     height: 35.8vh; 
     width: 100%;
 }
-
 
 .banner-section2{
     display: flex;
@@ -212,5 +229,3 @@ section{
     flex-grow: 4;
     border:1px var(--primary-red);
 }
-
-  

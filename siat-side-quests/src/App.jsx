@@ -1,6 +1,7 @@
 import Card from './components/card/Card.jsx'
 import Navbar from './components/navbar/Navbar.jsx'
 import Header from './components/header/header.jsx'
+import Resource from './components/resources/Resource.jsx'
 import prototypingIcon from "/prototyping-icon.svg"
 import communicationIcon from "/communication-icon.svg"
 import researchIcon from "/research-icon.svg"
@@ -95,7 +96,7 @@ function App() {
         </div>
         
         <section> 
-
+              <Resource/>
         </section>
 
       </div>
