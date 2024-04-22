@@ -5,7 +5,7 @@
     --primary-white: rgba(250, 249, 249, 1);
     --primary-lightgray: rgba(85, 85, 85, 1);
     --primary-darkgray: rgba(58, 58, 58, 1);
-
+    --leftofNav-padding: 6vw;
 }
 
 * {
@@ -56,8 +56,8 @@
 }
 
 html{
-    /* scroll-snap-type: y mandatory;
-    scroll-behavior: smooth; */
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -126,7 +126,6 @@ p.darkgray-text{
 
 p.large{
     font-size: 3em;
-    line-height: 130%;
 }
 
 p.resource-category-title{
@@ -161,18 +160,14 @@ ul{
 }
 
 section{
-    /* height: fit-content;
-    scroll-snap-align: start; */
+    height: fit-content;
+    scroll-snap-align: start;
 }
 
 .site-wrapper{
     display: flex;
     margin-left:auto;
     margin-right:auto;
-}
-
-.nav-item{
-    
 }
 
 .banner-wrapper{
@@ -197,8 +192,11 @@ section{
 	border: 1px solid #be2d2d;
 	background:rgba(249.69,248.65,248.65,1);
 }
+.sb-left{
+    width: 7.1vw;
+}
 
-.subject-item-long{
+.sb-long{
     width: 100%
 }
 
@@ -212,9 +210,9 @@ section{
     height: auto;
 }
 
-
 .product-design-heading{
-    padding-top: 1rem;
+    padding-top: 2rem;
+    margin-bottom: 5px;
 }
 
 .banner-section1{
@@ -222,9 +220,9 @@ section{
     flex-direction: column;
     overflow: hidden;
     background:rgba(249.69,248.65,248.65,1);
-    height: 35.8vh; 
+    height: 20vw; 
     width: 100%;
-    padding: 0 5.9vw; 
+    padding: 0 var(--leftofNav-padding); 
 }
 
 .banner-section2{
@@ -251,7 +249,7 @@ section{
 
 .right-panel{
     display: flex;
-    padding: 2vh 5.9vw 0 6.3vw;
+    padding: 2vh var(--leftofNav-padding) 0 6.3vw;
     border-radius: 6px 0 0 6px; 
     border-left: 1px solid var(--primary-red);
     width: 100%;
@@ -259,7 +257,7 @@ section{
 
 .left-panel{
     display: flex;
-    padding: 2vh 5.9vw 0 6.3vw;
+    padding: 2vh var(--leftofNav-padding) 0 6.3vw;
     border-radius: 0 6px 6px 0; 
     height: 100%;
     width: 100%;
@@ -317,6 +315,10 @@ section{
     justify-content: space-between;
 }
 
+.similiar-career-link{
+    padding-top: 1rem;
+}
+
 .white-space{
     width: 6.3vw;
     background-color: var(--primary-white);
@@ -368,13 +370,13 @@ section{
     .right-panel{
         border-left: 1px solid var(--primary-white);
         border-radius: 0px; 
-        padding: 5.9vw;
+        padding: var(--leftofNav-padding);
     }
 
     .left-panel{
         border-radius: 0px; 
         border-bottom: 1px solid var(--primary-red);
-        padding: 5.9vw; 
+        padding: var(--leftofNav-padding); 
     }
 
     p.large{

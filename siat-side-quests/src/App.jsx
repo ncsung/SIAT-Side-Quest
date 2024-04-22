@@ -52,9 +52,9 @@ function App() {
     <div className="banner-wrapper">
       <section id="introduction"> 
           <div className="subject-bar">
-            <div className="subject-bar-item"></div>
+            <div className="subject-bar-item sb-left"></div>
             <div className="subject-bar-item sb-md"><img src={UXIcon} alt="UX in siat sidequest font" ></img></div>
-            <div className="subject-bar-item subject-item-long"></div>
+            <div className="subject-bar-item sb-long"></div>
           </div>
           <div className="banner">
             <div className="banner-section1">
@@ -116,6 +116,7 @@ function App() {
             </div>
           </div>
           </section>
+          <section id="alums">
           <div className="resource cards-intro">
               <div className="resource-disc">
                 <p className = "resource-category-title red-text">Featured Alumni & Students</p>
@@ -124,7 +125,7 @@ function App() {
  
             
           </div>
-      <section id="alums">
+      
         <div className="cards-section">
           <div className="white-space">
           </div>
