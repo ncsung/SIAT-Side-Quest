@@ -28,7 +28,7 @@ export const ResourceFrame = ({title, description}) =>
   
             <div className="resource-three-col col-header">
                 <p className="three-col-child resources-tag">Resources</p>
-                <p className="three-col-child ">Category</p>
+                <p className="three-col-child category-tag">Category</p>
                 <p className="three-col-child right-aligned">Alumni Endorsement</p>
             </div>
             <div className="cards-resources-div">

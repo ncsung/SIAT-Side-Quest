@@ -37,8 +37,12 @@
   /* border-right: 1px var(--primary-red); */
 }
 
-@media (max-width: 1545){
-  /* .nav-frame{
-    width: 10vw;
-  } */
+@media (max-width: 1545px){
+  .nav-item a{
+    font-size: 2vw;
+  }
+  
+  .nav-frame p{
+    font-size: 1vw;
+  }
 }

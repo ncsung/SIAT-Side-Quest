@@ -6,14 +6,16 @@ export const Resource = ({imgSrc, imgAlt, resourceName,
 {
     return(
         <>  
+        
         <div className="resource-content-wrapper">
-            <img src={imgSrc} alt={imgAlt}></img>
-            <div className="resource-content">
-                <h3 className="red-text resource-title"> {resourceName}</h3>
-                <p className="lightgray-text">{description}</p>
-            </div>
-        </div>
-            <div className="categories-col">
+        <img src={imgSrc} alt={imgAlt}></img>
+            <div className="row-col-flex">
+                <div className="resource-content">
+                    <h3 className="red-text resource-title"> {resourceName}</h3>
+                    <p className="lightgray-text">{description}</p>
+                </div>
+
+                <div className="categories-col">
                 {
                     categories.map((category, i) =>{
                         return(
@@ -21,7 +23,10 @@ export const Resource = ({imgSrc, imgAlt, resourceName,
                         )   
                     })
                 }
+                </div>
             </div> 
+        </div>
+       
         </>
     );
 }

@@ -5,8 +5,13 @@
 }
 
 .resources-tag{
-    width: 32.1vw;
+    width: 30.2vw;
+
 }
+.category-tag{
+    width: 5.4vw;
+}
+
 .resource-cards{
     margin-bottom: 88px;
 }
@@ -28,7 +33,6 @@
 .col-header{
     padding-bottom: 1em;
 }
-
 
 .extra-resource-links{
     display: flex;

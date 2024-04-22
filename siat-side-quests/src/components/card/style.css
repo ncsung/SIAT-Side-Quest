@@ -3,7 +3,7 @@
   flex-direction: column;
   background-color: var(--primary-white);
   border-radius: 8px;
-  margin: 1px 0px 1px 1px;
+  margin: 1px 0px 0px 1px;
   width: 33.2%;
   overflow: hidden;
 }
@@ -21,6 +21,7 @@
   flex-direction: row;
   align-items: center;
   padding-top: 2rem;
+  gap:7px;
 }
 
 .learn-more{
@@ -74,6 +75,7 @@
     right: 0;
     height: 100vh;
     background: rgba(66, 66, 66, 0.7);
+    z-index: 1000;
 }
 
 .overlay{
@@ -90,8 +92,4 @@
   }
 }
 
-@media (max-width: 1397px){
-  .card{
-    width: 100%;
-  }
-}
+

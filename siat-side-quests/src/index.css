@@ -154,7 +154,6 @@ p.gray-tag{
 	border-radius: 15px;
 	outline: 1px solid var(--primary-lightgray);
     padding: 3px 7px 3px 7px;
-    
 }
 
 ul{
@@ -339,7 +338,7 @@ section{
     }
 }
 
-@media (max-width: 1437px){
+@media (max-width: 1445px){
     .banner-section1{
         height: 37%; 
         width: 100%;
@@ -348,10 +347,6 @@ section{
     .scroll-section{
         height: 11vw;
     }
-
-}
-
-@media (max-width: 1225px){
     p.darkgray-text {
         font-size: 1rem;
     }
