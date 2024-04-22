@@ -3,9 +3,9 @@
 :root {
     --primary-red: #be2d2d;
     --primary-white: rgba(250, 249, 249, 1);
-    --primary-gray: #3B3B3B;
-    --accent-colour: #9A8174;
-    --white-colour: #FEFEFE;
+    --primary-lightgray: rgba(85, 85, 85, 1);
+    --primary-darkgray: rgba(58, 58, 58, 1);
+
 }
 
 * {
@@ -31,15 +31,33 @@
 
 @font-face{
     font-family: "ABCMonumentGrotesk-Medium"; 
-    src: local("ABCMonumentGrotesk-Regular-Trial"),
+    src: local("ABCMonumentGrotesk-Medium-Trial"),
     url("./fonts/ABCMonumentGrotesk-Medium-Trial.woff") format("woff2");
 }  
 
 @font-face{
+    font-family: "ABCMonumentGrotesk-Bold"; 
+    src: local("ABCMonumentGrotesk-Bold-Trial"),
+    url("./fonts/ABCMonumentGrotesk-Bold-Trial.woff") format("woff2");
+} 
+
+@font-face{
     font-family: "ESRebondGrotesqueTRIAL-Medium"; 
-    src: local("ABCMonumentGrotesk-Regular-Trial"),
+    src: local("ESRebondGrotesqueTRIAL-Medium"),
     url("./fonts/ESRebondGrotesqueTRIAL-Medium.otf") format("opentype");
 }  
+
+@font-face{
+    font-family: "ESRebondGrotesqueTRIAL-Semibold"; 
+    src: local("ESRebondGrotesqueTRIAL-Semibold"),
+    url("./fonts/ESRebondGrotesqueTRIAL-Semibold.otf") format("opentype");
+}
+
+@font-face{
+    font-family: "ESRebondGrotesqueTRIAL-Bold"; 
+    src: local("ESRebondGrotesqueTRIAL-Bold"),
+    url("./fonts/ESRebondGrotesqueTRIAL-Bold.otf") format("opentype");
+}
 
 html{
     scroll-snap-type: y mandatory;
@@ -65,12 +83,21 @@ h2{
 	font-weight: bold;
 }
 
+h3{
+    margin:0;
+}
+
+
+h4{
+    font-family: "ESRebondGrotesqueTRIAL-Medium", Helvetica;
+    font-size: 2.75rem;
+    font-weight: 500;
+    margin: 0;
+}
+
 ul{
     margin:0;
     padding: 0;
-}
-h3{
-    margin:0;
 }
 
 p{
@@ -91,19 +118,45 @@ p.center-aligned{
     color: var(--primary-red);
 }
 
-.tag{
+p.lightgray-text{
+    color:var(--primary-lightgray);
+    font-size: 1rem;
+}
+
+p.darkgray-text{
+    color:var(--primary-darkgray);
+    font-size: 1.25rem;
+}
+
+p.large{
+    font-size: 3rem;
+}
+
+p.resource-category-title{
+    font-family: "ESRebondGrotesqueTRIAL-Bold";
+}
+
+p.red-tag{
     text-align: center;
+    font-size: 0.875rem;
+    -ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	outline: 1px solid var(--primary-red);
+    padding: 3px 7px 3px 7px;
+}
+
+p.gray-tag{
+    text-align: center;
+    font-size: 0.875rem;
     -ms-border-radius: 15px;
 	-o-border-radius: 15px;
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
 	border-radius: 15px;
-	border: 1px solid #be2d2d;
-    padding: 6px 6px;
-}
-
-p.strong{
-    font-size: 2.4rem;
+	outline: 1px solid var(--primary-lightgray);
+    padding: 3px 7px 3px 7px;
     
 }
 
@@ -118,6 +171,7 @@ section{
 
 .site-wrapper{
     display: flex;
+    height: fit-content;
 }
 
 .nav{
@@ -223,6 +277,9 @@ section{
     padding-top: 5rem;
     text-align: center;
 }
+.cards-intro{
+    padding: 0 5.9rem;
+}
 
 .cards-section{
     display: flex;
@@ -231,56 +288,12 @@ section{
 
 .cards{
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .white-space{
     width: 6.3vw;
     background-color: var(--primary-white);
-    flex-grow: 4;
     border:1px var(--primary-red);
-}
-
-.resource{
-    padding: 0 5.9rem 5.8rem 5.9rem ;
-    background-color: var(--primary-white);
-    margin-top: 1px;
-}
-.resources-tag{
-    width: 32.1vw;
-}
-.resource-cards{
-    margin-bottom: 22px;
-}
-
-.resource-card{
-    margin-bottom: 22px;
-}
-
-.resource-disc{
-    padding-top: 3em;
-    padding-bottom: 3.6em;
-}
-
-.col-header{
-    padding-bottom: 1em;
-}
-
-.col-header p{
-    font-family: "ESRebondGrotesqueTRIAL-Medium";
-}
-
-.extra-resource-links{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.three-coll-small{
-    display: flex;
-    flex-flow: row;
-    gap:20%;
-    width: 50%;
-    justify-content: space-between;
 }

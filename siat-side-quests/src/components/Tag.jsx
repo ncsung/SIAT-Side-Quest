@@ -1,9 +1,12 @@
-export const Tag = ({category,
+export const Tag = ({category, isRed
 }) =>{
+    const redTag= <p className="red-tag red-text"> {category} </p>
+    const grayTag= <p className="gray-tag lightgray-text"> {category} </p>
+
     return(
         <>
-            <div className="tag-border">
-                <p className="tag red-text "> {category} </p>
+            <div className="tag">
+                {isRed? redTag: grayTag} 
             </div>
         </>
     )

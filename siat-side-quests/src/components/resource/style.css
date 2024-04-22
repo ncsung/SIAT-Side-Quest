@@ -9,16 +9,8 @@
     width: 23.7vw;
 }
 
-h3.resource-content{
-    font-family: "ESRebondGrotesqueTRIAL-Medium";
-}
-
-.resource-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 23.7vw;
-    padding-left: 20px;
+h3.resource-title{
+    font-family: "ESRebondGrotesqueTRIAL-Semibold";
 }
 
 .categories-col{
@@ -35,6 +27,16 @@ h3.resource-content{
     direction: row;
     width: 32.1vw;
 }
+
+.resource-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 23.7vw;
+    padding-left: 20px;
+}
+
+
 
 
 
