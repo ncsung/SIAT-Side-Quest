@@ -1,15 +1,22 @@
 .header-frame{
-    overflow: hidden;
     display: flex;
-    gap: 50px;
     height: 7.8vh;
-    background:var(--primary-white)
+    background:var(--primary-white);
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.3rem;
 }
 
-#header-icon{
-    flex-grow: 4;
+.header-links{
+    display: flex;
+    margin-left: auto;
+    gap: 5.1rem;
+
 }
-.header-frame a{
-    justify-self: end;
-    align-self: center;
+
+.header-links a{
+    text-decoration: none;
+    font-family: "ABCMonumentGrotesk-Medium";
 }
+
+

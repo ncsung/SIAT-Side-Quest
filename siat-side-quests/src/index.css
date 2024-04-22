@@ -13,15 +13,11 @@
     box-sizing: border-box;
 }
 
-/* @font-face{
-    font-family: "Regular"; 
-    src: local("ABCMonumentGrotesk-Regular-Trial"),
-    local("ABCMonumentGrotesk-Medium-Trial"),
-    local("ESRebondGrotesqueTRIAL-Medium"),
-      url("./font/ABCMonumentGrotesk-Regular-Trial.woff") format("woff2"),
-      url("./fonts/ABCMonumentGrotesk-Medium-Trial.woff") format("woff2"),
-      url("./fonts/ESRebondGrotesqueTRIAL-Medium.otf") format("opentype");
-  } */
+@font-face{
+    font-family: "ABCMonumentGrotesk-Light"; 
+    src: local("ABCMonumentGrotesk-Light-Trial"),
+      url("./fonts/ABCMonumentGrotesk-Light-Trial.woff") format("woff");
+  }  
 
 @font-face{
     font-family: "ABCMonumentGrotesk-Regular"; 
@@ -60,8 +56,8 @@
 }
 
 html{
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+    /* scroll-snap-type: y mandatory;
+    scroll-behavior: smooth; */
 }
 
 body{
@@ -129,7 +125,8 @@ p.darkgray-text{
 }
 
 p.large{
-    font-size: 3rem;
+    font-size: 3em;
+    line-height: 130%;
 }
 
 p.resource-category-title{
@@ -165,28 +162,27 @@ ul{
 }
 
 section{
-    height: 100vh;
-    /* scroll-snap-align: center; */
+    /* height: fit-content;
+    scroll-snap-align: start; */
 }
 
 .site-wrapper{
     display: flex;
-    height: fit-content;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-.nav{
-    position: fixed;
-    flex-grow: 1;
+.nav-item{
+    
 }
 
 .banner-wrapper{
     border-left: 1px; 
-    flex-shrink: 4;
+    width: 100%;
 }
 
 .subject-bar{
     display: flex;
-    height: min-content;
 }
 
 .subject-bar-item{
@@ -207,11 +203,25 @@ section{
     width: 100%
 }
 
+.sb-md{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sb-md img{
+    width: 4rem;
+    height: auto;
+}
+
 .banner{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+}
+
+.product-design-heading{
+    padding-top: 1rem;
 }
 
 .banner-section1{
@@ -221,6 +231,7 @@ section{
     background:rgba(249.69,248.65,248.65,1);
     height: 35.8vh; 
     width: 100%;
+    padding: 0 5.9vw; 
 }
 
 .banner-section2{
@@ -231,8 +242,8 @@ section{
 }
 
 .list-icon{
-    width: 40px;
-    height: 40px;
+    width: 2vw;
+    height: 2vw;
 }
 
 .section2-panel{
@@ -246,37 +257,60 @@ section{
 }
 
 .right-panel{
-    margin-left: 1.1px;
+    display: flex;
+    padding: 2vh 5.9vw 0 6.3vw;
+    border-radius: 6px 0 0 6px; 
+    border-left: 1px solid var(--primary-red);
 }
 
-.content{
-    position: relative;
-    padding: 0;
-    padding-left: 1rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
-    
+.left-panel{
+    display: flex;
+    padding: 2vh 5.9vw 0 6.3vw;
+    border-radius: 0 6px 6px 0; 
+    height: 100%;
 }
 
-.similiar-career-link{
-    margin:0;
-    margin-left: 6rem;
-    margin-right: 6rem;
+.skillset-list{
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    width: 70%;  
+     
 }
 
-.content-body{
-    margin-top: 0;
+.skillset{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    gap: 23px;
+    padding-bottom: 22px;
+}
+
+.skillset li{
+    font-family:"ESRebondGrotesqueTRIAL-Medium";
+}
+
+.banner-section1 a{
+    color: var(--primary-darkgray);
 }
 
 .scroll-section{
+    display: flex;
     background:rgba(249.69,248.65,248.65,1);
     height: 28vh;
     width: 100%;
-    border-radius: 6px;
     margin-top: 1px;
-    padding-top: 5rem;
-    text-align: center;
+    justify-content: center;
 }
+
+.scroll-msg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+  }
+
 .cards-intro{
     padding: 0 5.9rem;
 }
@@ -294,6 +328,47 @@ section{
 
 .white-space{
     width: 6.3vw;
+    
     background-color: var(--primary-white);
     border:1px var(--primary-red);
 }
+
+@media (max-width: 1644px){
+    .white-space{
+        width: 0;
+    }
+}
+
+@media (max-width: 1437px){
+    .banner-section1{
+        height: 37%; 
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .scroll-section{
+        height: 11vw;
+    }
+
+}
+
+@media (max-width: 1225px){
+    p.darkgray-text {
+        font-size: 1rem;
+    }
+
+    .skillset{
+        gap:4px;
+    }
+
+    .list-icon{
+        width: 3vw;
+        height: 3vw;
+    }
+
+}
+
+
+
+
+
+

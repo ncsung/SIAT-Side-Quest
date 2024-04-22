@@ -12,7 +12,6 @@
   font-family: "ABCMonumentGrotesk-Regular";
 }
 
-
 .card-content{
   padding: 2.3em 2em 2em 2em; 
 }
@@ -30,8 +29,6 @@
   align-items: center;
   margin-left: auto;
 }
-
-
 
 .tag{
   min-width: fit-content;
@@ -85,4 +82,16 @@
       background-color: rgb(250,249,249);
       width: 70vw;
       height: 70vh;
+}
+
+@media (max-width: 1503px){
+  .card{
+    width: 49%;
+  }
+}
+
+@media (max-width: 1397px){
+  .card{
+    width: 100%;
+  }
 }
