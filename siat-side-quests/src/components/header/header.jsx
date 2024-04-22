@@ -8,9 +8,9 @@ export const Header = () => {
           <img src={logo} alt="A Siat Side Quest letter S Logo"></img>
         </div>
         <div className="header-links">
-        <a href="#" className="red-text"> Career Pathways</a>
-        <a href="#" className="red-text"> Alumni</a>
-        <a href="#" className="red-text"> Resources</a>
+        <a href="#" className="red-text"> Discover Careers</a>
+        <a href="#" className="red-text"> Featured Alumni</a>
+        <a href="#" className="red-text"> Explore Resources</a>
         </div>
     </div>
   );

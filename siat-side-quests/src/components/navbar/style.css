@@ -11,6 +11,10 @@
   height:100vh;
 }
 
+.nav-text{
+  font-size: 1rem;
+}
+
 .nav-frame .nav-item .nav-item-number {
   font-family: "ABCMonumentGrotesk-Light";
   font-size: 2rem;
@@ -21,7 +25,6 @@
 
 .nav-frame .nav-item p{
   font-family: "ABCMonumentGrotesk-Medium";
-  font-size: 1rem;
   line-height: 130%;
   text-decoration: none;
   z-index: 3;
@@ -77,6 +80,10 @@
     font-size: 2vw;
   }
   
+
+}
+
+@media(max-width: 1263px){
   .nav-frame p{
     font-size: 1vw;
   }

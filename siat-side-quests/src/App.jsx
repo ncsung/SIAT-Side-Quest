@@ -120,7 +120,7 @@ function App() {
           <div className="resource cards-intro">
               <div className="resource-disc">
                 <p className = "resource-category-title red-text">Featured Alumni & Students</p>
-                <p className= "large red-text"> Explore featured alumni and senior students to discover their IAT-paths.</p >
+                <p className= "large red-text"> Explore the paths and resources of featured alumni and senior students in this career.</p >
               </div>
  
             
@@ -144,20 +144,20 @@ function App() {
         </div>
         </section>
         <section id="inspiration">
-          <ResourceFrame title="Inspiration" 
-          description="These resources provides different perspectives on ways to approach your craft."/>
+          <ResourceFrame title="Project Inspiration" 
+          description="Looking to buff the content in your portfolio? Here are some resources to kickstart your creativity."/>
         </section>
         <section id= "tutorials">
-          <ResourceFrame title="Tutorials" 
-          description="These resources are a self-paced alternative to learn outside of the usual class format."/>
+          <ResourceFrame title="Skill-Development" 
+          description="Looking to develop your own skills outside of courses? Check out these self-paced resources."/>
         </section>
         <section id= "readings">
-          <ResourceFrame title="Readings" 
-          description="These resources provide depth in broad or more specific areas of knowledge."/>
+          <ResourceFrame title="Recommended Readings" 
+          description="Beyond concepts and methods, these literary resources provide diverse perspectives to aid your process."/>
         </section>
         <section id= "software">
-          <ResourceFrame title="Software" 
-          description="Software and plugins are a tool and means to achieve your craft and bring it to reality."/>
+          <ResourceFrame title="Recommended Software" 
+          description="Technical requirements are always changing, but here are some plugins and tools that we currently suggest."/>
         </section>
 
       </div>
