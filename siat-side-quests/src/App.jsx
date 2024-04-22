@@ -19,6 +19,7 @@ import ResourceFrame from "./components/resourceFrame/ResourceFrame.jsx"
 import Footer from "./components/footer/Footer.jsx"
 import { useState, useEffect } from "react";
 import { BsArrowDownCircle } from "react-icons/bs";
+import { motion } from "framer-motion"
 
 function App() {
   const [alumniDataState, setAlumniData] = useState([]);
@@ -57,34 +58,59 @@ function App() {
           </div>
           <div className="banner">
             <div className="banner-section1">
-              <h1 className="product-design-heading"> Product Design </h1> 
-              <p className="content content-body large red-text"> Also commonly referred to as UX/UI design — 
-              is a field that revolves around the identification of user problems and the development of 
-              digital or physical solutions. </p>
-              <p className="content similiar-career-link">Similar careers: <a href="#">Brand Design</a>, <a href='#'> UX Researcher</a> </p>
+              <motion.div
+              initial={{ y: "40px", opacity: 0 }}
+              animate={{ y: "0", opacity: 1 }}
+              transition={{type: "spring", duration: 0.9, delay: 0.2}}
+              >
+                <h1 className="product-design-heading"> Product Design </h1> 
+                <p className="content content-body large red-text"> Also commonly referred to as UX/UI design — 
+                is a field that revolves around the identification of user problems and the development of 
+                digital or physical solutions. </p>
+                <p className="content similiar-career-link">Similar careers: <a href="#">Brand Design</a>, <a href='#'> UX Researcher</a> </p>
+
+              </motion.div>
             </div>
 
             <div className="banner-section2">
               <div className="section2-panel left-panel">
-                <h2 className="content">Would you be suited for this career?</h2>
-                <p className="content content-body darkgray-text">A Product Designer, at their core, is a problem solver. If you enjoy the process of identifying areas of opportunity, 
-                empathizing with diverse perspectives, and testing your ideas, 
-                this might be the career for you!</p>
+                <motion.div
+                initial={{ y: "40px", opacity: 0 }}
+                animate={{ y: "0", opacity: 1 }}
+                transition={{type: "spring", duration: 0.9, delay: 0.2}}
+                >
+                  <h2 className="content">Would you be suited for this career?</h2>
+                  <p className="content content-body darkgray-text">A Product Designer, at their core, is a problem solver. If you enjoy the process of identifying areas of opportunity, 
+                  empathizing with diverse perspectives, and testing your ideas, 
+                  this might be the career for you!</p>
+                </motion.div>
               </div>
               <div className="section2-panel right-panel">
-                <h2>Common skills of successful Product Designers</h2>
-                <ul className="skillset-list">
-                  <li className= "skillset red-text"> <img src={prototypingIcon} alt="asdf" className="list-icon"></img> Prototyping</li>
-                  <li className= "skillset red-text"> <img src= {researchIcon} alt="asdf" className="list-icon"></img> User Research</li>
-                  <li className= "skillset red-text"> <img src= {visualDesignIcon} alt="asdf" className="list-icon"></img>Visual Design</li>
-                  <li className= "skillset red-text"> <img src= {communicationIcon} alt="asdf" className="list-icon"></img> Communication</li>
-                </ul>
+              <motion.div
+                initial={{ y: "40px", opacity: 0 }}
+                animate={{ y: "0", opacity: 1 }}
+                transition={{type: "spring", duration: 0.9, delay: 0.2}}
+                >
+                  <h2>Common skills of successful Product Designers</h2>
+                  <ul className="skillset-list">
+                    <li className= "skillset red-text"> <img src={prototypingIcon} alt="asdf" className="list-icon"></img> Prototyping</li>
+                    <li className= "skillset red-text"> <img src= {researchIcon} alt="asdf" className="list-icon"></img> User Research</li>
+                    <li className= "skillset red-text"> <img src= {visualDesignIcon} alt="asdf" className="list-icon"></img>Visual Design</li>
+                    <li className= "skillset red-text"> <img src= {communicationIcon} alt="asdf" className="list-icon"></img> Communication</li>
+                  </ul>
+                </motion.div>
               </div>
             </div>
 
             <div className="scroll-section">
               <div className="scroll-msg">
-                <p>Scroll to explore IAT Alumni and Senior Students in this field</p>
+              <motion.div
+                initial={{ y: "40px", opacity: 0 }}
+                animate={{ y: "0", opacity: 1 }}
+                transition={{type: "spring", duration: 0.9, delay: 0.2}}
+                >
+                  <p>Scroll to explore IAT Alumni and Senior Students in this field</p>
+                </motion.div>
                 <BsArrowDownCircle style= {{color: "#3A3A3A"}}/>
               </div>
             </div>
