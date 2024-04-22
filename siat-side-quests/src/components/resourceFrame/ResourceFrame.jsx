@@ -25,7 +25,7 @@ export const ResourceFrame = ({title, description}) =>
                 <p className= "large red-text"> {description}</p >
               </div>
  
-  
+          <div className="resource-frame">
             <div className="resource-three-col col-header">
                 <p className="three-col-child resources-tag">Resources</p>
                 <p className="three-col-child category-tag">Category</p>
@@ -44,6 +44,7 @@ export const ResourceFrame = ({title, description}) =>
                     </div>
                   )
                 })}
+            </div>
             </div>
                 <div className="three-coll-small">
                   <div className="extra-resource-links">

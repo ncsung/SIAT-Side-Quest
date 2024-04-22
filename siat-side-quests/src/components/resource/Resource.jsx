@@ -6,7 +6,6 @@ export const Resource = ({imgSrc, imgAlt, resourceName,
 {
     return(
         <>  
-        
         <div className="resource-content-wrapper">
         <img src={imgSrc} alt={imgAlt}></img>
             <div className="row-col-flex">
