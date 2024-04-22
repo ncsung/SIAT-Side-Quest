@@ -61,7 +61,7 @@ function App() {
               <motion.div
               initial={{ y: "40px", opacity: 0 }}
               animate={{ y: "0", opacity: 1 }}
-              transition={{type: "spring", duration: 0.9, delay: 0.2}}
+              transition={{type: "spring", duration: 0.9, delay: 0}}
               >
                 <h1 className="product-design-heading"> Product Design </h1> 
                 <p className="content content-body large red-text"> Also commonly referred to as UX/UI design — 
@@ -77,7 +77,7 @@ function App() {
                 <motion.div
                 initial={{ y: "40px", opacity: 0 }}
                 animate={{ y: "0", opacity: 1 }}
-                transition={{type: "spring", duration: 0.9, delay: 0.2}}
+                transition={{type: "spring", duration: 0.9, delay: 0.12}}
                 >
                   <h2 className="content">Would you be suited for this career?</h2>
                   <p className="content content-body darkgray-text">A Product Designer, at their core, is a problem solver. If you enjoy the process of identifying areas of opportunity, 
@@ -89,7 +89,7 @@ function App() {
               <motion.div
                 initial={{ y: "40px", opacity: 0 }}
                 animate={{ y: "0", opacity: 1 }}
-                transition={{type: "spring", duration: 0.9, delay: 0.2}}
+                transition={{type: "spring", duration: 0.9, delay: 0.22}}
                 >
                   <h2>Common skills of successful Product Designers</h2>
                   <ul className="skillset-list">
@@ -107,7 +107,7 @@ function App() {
               <motion.div
                 initial={{ y: "40px", opacity: 0 }}
                 animate={{ y: "0", opacity: 1 }}
-                transition={{type: "spring", duration: 0.9, delay: 0.2}}
+                transition={{type: "spring", duration: 1, delay: 0.32}}
                 >
                   <p>Scroll to explore IAT Alumni and Senior Students in this field</p>
                 </motion.div>
