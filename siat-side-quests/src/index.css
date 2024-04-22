@@ -220,7 +220,7 @@ section{
 .banner-section1{
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    overflow: hidden;
     background:rgba(249.69,248.65,248.65,1);
     height: 35.8vh; 
     width: 100%;
