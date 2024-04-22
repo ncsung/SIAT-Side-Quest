@@ -2,11 +2,7 @@
     font-family: "ESRebondGrotesqueTRIAL-Medium";
 }
 
-.footer-heading{
-    width:400px;
-    height: auto;
-    padding: 0 2rem 0 0rem;
-}
+
 
 .footer-heading h4{
     font-family: "ESRebondGrotesqueTRIAL-Medium", Helvetica;
@@ -51,9 +47,18 @@
 .six-coll{
     display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
     height: 28.2vh;
     justify-content: space-between;
+}
+
+.footer-links-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-heading{
+    /* padding: 0 2rem 0 0rem; */
 }
 
 .six-coll-item{
@@ -68,5 +73,34 @@
 .footer-copyright-div{
     align-content: end;
     height: 14.1vh;
+}
+
+@media (max-width: 1501px){
+    .six-coll{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .footer-links-div{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 900px){
+    .six-coll{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .footer-links-div{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .six-coll-item{
+        width:250px;
+    }
+
 }
 

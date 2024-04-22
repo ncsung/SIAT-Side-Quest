@@ -28,6 +28,7 @@ h3.resource-title{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 5px;
     width: 200px;
 }
 
@@ -38,6 +39,34 @@ h3.resource-title{
     width: 26vw;
     padding-left: 20px;
 }
+
+
+
+@media (max-width: 1501px){
+    .row-col-flex{
+        flex-direction: column;
+    }
+    
+    .categories-col{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: fit-content;
+        padding-left: 20px;
+    }
+
+    .resource-content{
+        width: 50vw;
+    }
+
+}
+
+
+@media (max-width: 945px){
+
+
+}
+
 
 
 

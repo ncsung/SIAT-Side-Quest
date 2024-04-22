@@ -11,17 +11,20 @@
   height:100vh;
 }
 
-.nav-item a{
+.nav-frame .nav-item .nav-item-number {
   font-family: "ABCMonumentGrotesk-Light";
   font-size: 2rem;
   text-decoration: none;
-  color: var(--primary-red)
+  color: var(--primary-red);
+  text-decoration: none;
 }
 
-.nav-frame p{
+.nav-frame .nav-item p{
   font-family: "ABCMonumentGrotesk-Medium";
   font-size: 1rem;
   line-height: 130%;
+  text-decoration: none;
+  z-index: 3;
 }
 
 .nav-item{
@@ -34,7 +37,39 @@
   padding-left: 1rem;
   margin-bottom: 1px;
   background-color: var(--primary-white);
+  text-decoration: none;
+  transition: background-color 0.3s ease-in; 
   /* border-right: 1px var(--primary-red); */
+}
+
+.nav-item:hover {
+  background-color: var(--primary-red);
+}
+
+.nav-item:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: var(--primary-red);
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+.nav-item:hover .nav-item-number {
+  color: var(--primary-white);
+}
+
+.nav-item:hover .red-text {
+  color: var(--primary-white);
 }
 
 @media (max-width: 1545px){
@@ -44,5 +79,11 @@
   
   .nav-frame p{
     font-size: 1vw;
+  }
+}
+
+@media(max-width: 1000px){
+  .nav-frame{
+    display: none;
   }
 }

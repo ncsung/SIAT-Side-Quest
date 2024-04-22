@@ -49,7 +49,7 @@ function App() {
     <Navbar className="nav-item"/>
      
     <div className="banner-wrapper">
-      <section>
+      <section id="introduction"> 
           <div className="subject-bar">
             <div className="subject-bar-item"></div>
             <div className="subject-bar-item sb-md"><img src={UXIcon} alt="UX in siat sidequest font" ></img></div>
@@ -98,7 +98,7 @@ function App() {
  
             
           </div>
-      <section>
+      <section id="alums">
         <div className="cards-section">
           <div className="white-space">
           </div>
@@ -116,19 +116,19 @@ function App() {
           </div>
         </div>
         </section>
-        <section>
+        <section id="inspiration">
           <ResourceFrame title="Inspiration" 
           description="These resources provides different perspectives on ways to approach your craft."/>
         </section>
-        <section>
+        <section id= "tutorials">
           <ResourceFrame title="Tutorials" 
           description="These resources are a self-paced alternative to learn outside of the usual class format."/>
         </section>
-        <section>
+        <section id= "readings">
           <ResourceFrame title="Readings" 
           description="These resources provide depth in broad or more specific areas of knowledge."/>
         </section>
-        <section>
+        <section id= "software">
           <ResourceFrame title="Software" 
           description="Software and plugins are a tool and means to achieve your craft and bring it to reality."/>
         </section>

@@ -29,7 +29,7 @@ export const ResourceFrame = ({title, description}) =>
             <div className="resource-three-col col-header">
                 <p className="three-col-child resources-tag">Resources</p>
                 <p className="three-col-child category-tag">Category</p>
-                <p className="three-col-child right-aligned">Alumni Endorsement</p>
+                <p className="three-col-child right-aligned endorsement-tag">Alumni Endorsement</p>
             </div>
             <div className="cards-resources-div">
                 {resourceDataState.map(resource => {
@@ -52,7 +52,7 @@ export const ResourceFrame = ({title, description}) =>
                       <li><a href="#"> extra resource link</a></li>
                       <li><a href="#"> extra resource link</a></li>
                       <li><a href="#"> extra resource link</a></li>
-                      </ul>
+                    </ul>
                   </div>
                   <div className="extra-resource-links">
                     <p className="red-text">Inspiration</p>
@@ -60,7 +60,7 @@ export const ResourceFrame = ({title, description}) =>
                       <li><a href="#"> extra resource link</a></li>
                       <li><a href="#"> extra resource link</a></li>
                       <li><a href="#"> extra resource link</a></li>
-                      </ul>
+                    </ul>
                   </div>
                   <div className="extra-resource-links">
                     <p className="red-text">Inspiration</p>

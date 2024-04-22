@@ -26,6 +26,9 @@ export const Resource = ({imgSrc, imgAlt, resourceName,
                 </div>
             </div> 
         </div>
+        <div className="alum-endorses">
+            
+        </div>
        
         </>
     );
