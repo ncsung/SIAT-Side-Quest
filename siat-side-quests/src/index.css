@@ -271,31 +271,41 @@ section{
 .right-panel{
     border-radius: 6px 0 0 6px; 
     border-left: 1px solid var(--primary-red);
-    padding: 0 2em 0 4em;
+    padding: 4em 0 3.4em var(--leftofNav-padding);
     width: 100%;
 }
 
 .left-panel{
+    display: flex;
     border-radius: 0 6px 6px 0; 
-    padding: 0 0 0 var(--leftofNav-padding);
+    padding: 4em 0 3.4em var(--leftofNav-padding);
     width: 100%;
+   
+}
+
+.section2-content{
+    width: 77%;
 }
 
 .skillset-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
-    width: 70%;  
+    width: 77%;  
 }
 
 .skillset{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: fit-content;
-    gap: 23px;
+    gap: 1em;
     padding-bottom: 22px;
 }
+
 
 .skillset li{
     font-family:"ESRebondGrotesqueTRIAL-Medium";

@@ -75,31 +75,38 @@ function App() {
 
             <div className="banner-section2">
               <div className="section2-panel left-panel">
-                <motion.div
-                lassName= "banner-section2-content-left"
+              <motion.div
+                className= "banner-section2-content-left"
                 initial={{ y: "40px", opacity: 0 }}
                 animate={{ y: "0", opacity: 1 }}
                 transition={{type: "spring", duration: 0.9, delay: 0.12}}
                 >
-                  <h2 className="content">Would you be suited for this career?</h2>
-                  <p className="content content-body darkgray-text">A Product Designer, at their core, is a problem solver. If you enjoy the process of identifying areas of opportunity, 
+                  <h2 className="section2-content">Would you be suited for this career?</h2>
+                  <p className="section2-content darkgray-text">A Product Designer, at their core, is a problem solver. If you enjoy the process of identifying areas of opportunity, 
                   empathizing with diverse perspectives, and testing your ideas, 
                   this might be the career for you!</p>
                 </motion.div>
               </div>
+
               <div className="section2-panel right-panel">
               <motion.div
-                className="banner-section2-content-right"
+                className="section2-content"
                 initial={{ y: "40px", opacity: 0 }}
                 animate={{ y: "0", opacity: 1 }}
                 transition={{type: "spring", duration: 0.9, delay: 0.22}}
                 >
                   <h2>Common skills of successful Product Designers</h2>
                   <ul className="skillset-list">
-                    <li className= "skillset red-text"> <img src={prototypingIcon} alt="asdf" className="list-icon"></img> Prototyping</li>
-                    <li className= "skillset red-text"> <img src= {researchIcon} alt="asdf" className="list-icon"></img> User Research</li>
-                    <li className= "skillset red-text"> <img src= {visualDesignIcon} alt="asdf" className="list-icon"></img>Visual Design</li>
-                    <li className= "skillset red-text"> <img src= {communicationIcon} alt="asdf" className="list-icon"></img> Communication</li>
+                    <div className="skillset-row1">
+                      <li className= "skillset red-text"> <img src={prototypingIcon} alt="asdf" className="list-icon"></img> Prototyping</li>
+                    
+                      <li className= "skillset red-text"> <img src= {researchIcon} alt="asdf" className="list-icon"></img> User Research</li>
+                    </div>
+
+                    <div className="skillset-row2">
+                      <li className= "skillset red-text"> <img src= {visualDesignIcon} alt="asdf" className="list-icon"></img>Visual Design</li>
+                      <li className= "skillset red-text"> <img src= {communicationIcon} alt="asdf" className="list-icon"></img> Communication</li>
+                    </div>
                   </ul>
                 </motion.div>
               </div>
