@@ -49,32 +49,34 @@ function App() {
     
     <Navbar className="nav-item"/>
      
-    <div className="banner-wrapper">
+    <div className="content-wrapper">
       <section id="introduction"> 
           <div className="subject-bar">
             <div className="subject-bar-item sb-left"></div>
             <div className="subject-bar-item sb-md"><img src={UXIcon} alt="UX in siat sidequest font" ></img></div>
             <div className="subject-bar-item sb-long"></div>
           </div>
-          <div className="banner">
+
+          <div className="banner-wrapper">
             <div className="banner-section1">
               <motion.div
-              initial={{ y: "40px", opacity: 0 }}
-              animate={{ y: "0", opacity: 1 }}
-              transition={{type: "spring", duration: 0.9, delay: 0}}
+                className= "banner-section1-content"
+                initial={{ y: "40px", opacity: 0 }}
+                animate={{ y: "0", opacity: 1 }}
+                transition={{type: "spring", duration: 0.9, delay: 0}}
               >
-                <h1 className="product-design-heading"> Product Design </h1> 
-                <p className="content content-body large red-text"> Also commonly referred to as UX/UI design — 
-                is a field that revolves around the identification of user problems and the development of 
-                digital or physical solutions. </p>
-                <p className="content similiar-career-link">Similar careers: <a href="#">Brand Design</a>, <a href='#'> UX Researcher</a> </p>
-
+              <h1 className="banner-heading"> Product Design </h1> 
+              <p className="content content-body large red-text"> Also commonly referred to as UX/UI design — 
+              is a field that revolves around the identification of user problems and the development of 
+              digital or physical solutions. </p>
+              <p className="content similiar-career-link">Similar careers: <a href="#">Brand Design</a>, <a href='#'> UX Researcher</a> </p>
               </motion.div>
             </div>
 
             <div className="banner-section2">
               <div className="section2-panel left-panel">
                 <motion.div
+                lassName= "banner-section2-content-left"
                 initial={{ y: "40px", opacity: 0 }}
                 animate={{ y: "0", opacity: 1 }}
                 transition={{type: "spring", duration: 0.9, delay: 0.12}}
@@ -87,6 +89,7 @@ function App() {
               </div>
               <div className="section2-panel right-panel">
               <motion.div
+                className="banner-section2-content-right"
                 initial={{ y: "40px", opacity: 0 }}
                 animate={{ y: "0", opacity: 1 }}
                 transition={{type: "spring", duration: 0.9, delay: 0.22}}
@@ -163,6 +166,8 @@ function App() {
       </div>
       
     </div>
+
+
     <section>
     <div className="three-coll">
             <div className="footer-logo-div">
