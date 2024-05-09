@@ -29,9 +29,9 @@ export const Card = ({imgSrc,
         </Overlay>
 
         {/* <div className="card-pp-div"> */}
-            <div className="card-profile-mask">
-                <img className="card-profile-picture" src={imgSrc} alt ={imgAlt}></img>
-            </div>
+        <div className="card-profile-mask">
+            <img className="card-profile-picture" src={imgSrc} alt ={imgAlt}></img>
+        </div>
         {/* </div> */}
         <div className="card-content">
             <h2 className="cardName">{name}</h2>

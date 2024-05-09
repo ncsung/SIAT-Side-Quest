@@ -145,16 +145,6 @@ p.red-tag{
     padding: 3px 7px 3px 7px;
 }
 
-/* @media (max-width: 1500px){
-    h1{
-        font-size: 1.25rem;
-    }
-
-    p.large{
-        font-size: 2.5rem;
-    }
-} */
-
 p.gray-tag{
     text-align: center;
     font-size: 0.875rem;
@@ -172,8 +162,8 @@ ul{
 }
 
 section{
-    height: fit-content;
-    scroll-snap-align: start;
+    /* height: fit-content;
+    scroll-snap-align: start; */
 }
 
 .site-wrapper{
@@ -224,13 +214,19 @@ section{
     height: auto;
 }
 
+.section{
+    display: flex;
+    padding: 4em var(--leftofNav-padding) 4em var(--leftofNav-padding); 
+}
+
 /* ******************************* Banner wrappers ************************************ */
+
+
 .banner-section1{
     display: flex;
     flex-direction: column;
     background:rgba(249.69,248.65,248.65,1);
     width: 100%;
-    padding: 4em var(--leftofNav-padding) 4em var(--leftofNav-padding); 
     justify-content: center;
 }
 
@@ -271,20 +267,23 @@ section{
 .right-panel{
     border-radius: 6px 0 0 6px; 
     border-left: 1px solid var(--primary-red);
-    padding: 4em 0 3.4em var(--leftofNav-padding);
+    padding: 4em 0 2em var(--leftofNav-padding);
     width: 100%;
 }
 
 .left-panel{
     display: flex;
     border-radius: 0 6px 6px 0; 
-    padding: 4em 0 3.4em var(--leftofNav-padding);
+    padding: 4em 0 2em var(--leftofNav-padding);
     width: 100%;
-   
+}
+
+.banner-section2-content-left{
+    width: 80%;
 }
 
 .section2-content{
-    width: 77%;
+    width: 100%;
 }
 
 .skillset-list{
@@ -295,7 +294,8 @@ section{
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
-    width: 77%;  
+    width: 100%;  
+    padding-right: 1em;
 }
 
 .skillset{
@@ -304,6 +304,10 @@ section{
     align-items: center;
     gap: 1em;
     padding-bottom: 22px;
+}
+
+.skillset-row{
+    width: 50%;
 }
 
 
@@ -315,10 +319,43 @@ section{
     color: var(--primary-darkgray);
 }
 
+
 .similiar-career-link{
     padding-top: 1.1em;
 }
 
+@media(max-width: 974px){
+
+    .section{
+        padding: 4em 2em 4em 2em; 
+
+    }
+    .banner-section2{
+        flex-direction: column;
+        align-items: center;
+        height: min-content;
+    }
+
+    .scroll-section{
+        display: none;
+    }
+
+    .right-panel{
+        border-left: 1px solid var(--primary-white);
+        border-radius: 0px; 
+    }
+
+    .left-panel{
+        border-radius: 0px; 
+        border-bottom: 1px solid var(--primary-red);
+    }
+
+    p.large{
+        font-size: 5vw;
+        line-height: 130%;
+    }
+    
+}
 .scroll-msg{
     display: flex;
     flex-direction: row;
@@ -327,7 +364,11 @@ section{
 }
 
 .cards-intro{
-    padding: 0 5.9rem;
+
+}
+
+.resource-disc{
+    width: 100%;
 }
 
 .cards{

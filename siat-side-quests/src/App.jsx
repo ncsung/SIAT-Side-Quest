@@ -58,7 +58,7 @@ function App() {
           </div>
 
           <div className="banner-wrapper">
-            <div className="banner-section1">
+            <div className="banner-section1 section">
               <motion.div
                 className= "banner-section1-content"
                 initial={{ y: "40px", opacity: 0 }}
@@ -74,7 +74,7 @@ function App() {
             </div>
 
             <div className="banner-section2">
-              <div className="section2-panel left-panel">
+              <div className="section2-panel left-panel section">
               <motion.div
                 className= "banner-section2-content-left"
                 initial={{ y: "40px", opacity: 0 }}
@@ -88,7 +88,7 @@ function App() {
                 </motion.div>
               </div>
 
-              <div className="section2-panel right-panel">
+              <div className="section2-panel right-panel section">
               <motion.div
                 className="section2-content"
                 initial={{ y: "40px", opacity: 0 }}
@@ -97,13 +97,13 @@ function App() {
                 >
                   <h2>Common skills of successful Product Designers</h2>
                   <ul className="skillset-list">
-                    <div className="skillset-row1">
+                    <div className="skillset-row">
                       <li className= "skillset red-text"> <img src={prototypingIcon} alt="asdf" className="list-icon"></img> Prototyping</li>
                     
                       <li className= "skillset red-text"> <img src= {researchIcon} alt="asdf" className="list-icon"></img> User Research</li>
                     </div>
 
-                    <div className="skillset-row2">
+                    <div className="skillset-row">
                       <li className= "skillset red-text"> <img src= {visualDesignIcon} alt="asdf" className="list-icon"></img>Visual Design</li>
                       <li className= "skillset red-text"> <img src= {communicationIcon} alt="asdf" className="list-icon"></img> Communication</li>
                     </div>
@@ -128,12 +128,12 @@ function App() {
           </section>
           <section id="alums">
           <div className="resource cards-intro">
-              <div className="resource-disc">
-                <p className = "resource-category-title red-text">Featured Alumni & Students</p>
-                <p className= "large red-text"> Explore the paths and resources of featured alumni and senior students in this career.</p >
+              <div className="resource-disc section">
+                <div>
+                  <p className = "resource-category-title red-text">Featured Alumni & Students</p>
+                  <p className= "large red-text"> Explore the paths and resources of featured alumni and senior students in this career.</p >
+                </div>
               </div>
- 
-            
           </div>
       
         <div className="cards-section">
