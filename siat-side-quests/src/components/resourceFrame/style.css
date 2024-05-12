@@ -1,5 +1,6 @@
 .resource{
     /* padding: 4em var(--leftofNav-padding) 4em var(--leftofNav-padding);  */
+    flex-direction: column;
     background-color: var(--primary-white);
     margin-top: 1px;
 }

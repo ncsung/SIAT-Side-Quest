@@ -20,8 +20,6 @@
   justify-content: space-between;
 }
 
-
-
 .card-foot{
   display: flex;
   flex-direction: row;
@@ -66,6 +64,7 @@
   mask-clip: no-clip;
   mask-size: 85%;
   margin-top: 10%;
+  padding: 1em;
 }
 
 .card-content{
@@ -97,16 +96,14 @@
 @media (max-width: 1503px){
   .card{
     width: 50%;
-    height: 26.6875em;
     border-right: 1px solid var(--primary-red)
   }
 
 }
 
-@media (max-width: 700px){
+@media (max-width: 880px){
   .card{
     width: 100%;
-
   }
 
 }

@@ -19,7 +19,7 @@ export const ResourceFrame = ({title, description}) =>
       }, []);
     return(
         <>
-        <div className="resource">
+        <div className="resource section">
               <div className="resource-disc">
                 <p className = "resource-category-title red-text">{title}</p>
                 <p className= "large red-text"> {description}</p >
