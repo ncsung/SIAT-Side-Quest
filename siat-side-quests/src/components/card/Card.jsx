@@ -36,9 +36,9 @@ export const Card = ({imgSrc,
         </div>
         {/* </div> */}
         <div className="card-content">
-            <h2 className="cardName">{name}</h2>
-            <p className="red-text"> {role}</p>
-            <p className="red-text"> {workHistory}</p>
+            <h2 className="card-name">{name}</h2>
+            <p className="darkgray-text"> {role}</p>
+            <p className="darkgray-text"> {workHistory}</p>
             <div className="card-foot">
                 {skills.map( (skill, index) => {
                     return(
@@ -46,7 +46,7 @@ export const Card = ({imgSrc,
                         )
                     })}
                 <div className="learn-more">
-                    <a onClick={toggleOverlay}> <p className= "lightgray-text learn-more">learn more</p></a>
+                    <a onClick={toggleOverlay}> <p className= "lightgray-text learn-more">View resources</p></a>
                     <BsArrowRight style={{
       color: "#3a3a3a"
     }}/>

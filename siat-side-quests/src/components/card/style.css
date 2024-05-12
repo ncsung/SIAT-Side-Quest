@@ -1,3 +1,13 @@
+
+.card p{
+  font-family: "ABCMonumentGrotesk-Regular";
+}
+
+.card-name{
+  font-family: "ESRebondGrotesqueTRIAL-Medium";
+  font-size: 2rem;
+}
+
 .card{
   display: flex;
   flex-direction: column;
@@ -10,9 +20,6 @@
   justify-content: space-between;
 }
 
-.card p{
-  font-family: "ABCMonumentGrotesk-Regular";
-}
 
 
 .card-foot{
