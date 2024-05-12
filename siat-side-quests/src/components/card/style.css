@@ -7,16 +7,13 @@
   overflow: hidden;
   max-height: 30.5em;
   margin-top: 1px;
+  justify-content: space-between;
 }
 
 .card p{
   font-family: "ABCMonumentGrotesk-Regular";
 }
 
-.card-content{
-  margin-bottom: auto;
-  padding: 2.3em 2em 0 2em;
-}
 
 .card-foot{
   display: flex;
@@ -51,7 +48,6 @@
   max-height: 50%;
   width: auto;
   align-items: center;
-
 }
 
 .card-profile-mask {
@@ -61,34 +57,40 @@
   mask-repeat: no-repeat;
   mask-position: center;
   mask-clip: no-clip;
-  mask-size: 28em 60em;
+  mask-size: 85%;
+  margin-top: 10%;
+}
+
+.card-content{
+  padding: 2.3em 2em 1em 2em;
 }
 
 .overlay-frame{
-    position: fixed;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    background: rgba(66, 66, 66, 0.7);
-    z-index: 1000;
+  position: fixed;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: rgba(66, 66, 66, 0.7);
+  z-index: 1000;
 }
 
 .overlay{
-    margin: 70px auto;
-    padding: 20px;
-    background-color: rgb(250,249,249);
-    width: 70vw;
-    height: 70vh;
+  margin: 70px auto;
+  padding: 20px;
+  background-color: rgb(250,249,249);
+  width: 70vw;
+  height: 70vh;
 }
 
 @media (max-width: 1503px){
   .card{
     width: 50%;
+    height: 26.6875em;
     border-right: 1px solid var(--primary-red)
   }
 
@@ -97,6 +99,7 @@
 @media (max-width: 700px){
   .card{
     width: 100%;
+
   }
 
 }

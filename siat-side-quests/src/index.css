@@ -267,14 +267,14 @@ section{
 .right-panel{
     border-radius: 6px 0 0 6px; 
     border-left: 1px solid var(--primary-red);
-    padding: 4em 0 2em var(--leftofNav-padding);
+    padding: 3.5em 0 2em var(--leftofNav-padding);
     width: 100%;
 }
 
 .left-panel{
     display: flex;
     border-radius: 0 6px 6px 0; 
-    padding: 4em 0 2em var(--leftofNav-padding);
+    padding: 3.5em 0 2em var(--leftofNav-padding);
     width: 100%;
 }
 
