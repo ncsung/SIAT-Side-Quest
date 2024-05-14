@@ -9,7 +9,7 @@ export const Navbar = () => {
           <p className="red-text nav-text">Career Description</p>
       </a>
       <a href="#alums" className="nav-item">
-        
+  
           <p className = "nav-item-number">01 </p>
           <p className="red-text nav-text">Notable Alumni & Students</p>
     
