@@ -7,14 +7,9 @@ import Tag from "../Tag.jsx"
 import RightArrow from "../../assets/rightArrow.svg"
 import { BsArrowRight  } from "react-icons/bs";
 
-export const Card = ({imgSrc,
-                    imgAlt,
-                    name,
-                    role,
-                    workHistory,
-                    skills
+export const Card = ({data
 }) => {
-    const [flip, setFlip] = useState(true);
+
     const [isOpen, setIsOpen] = useState(false);
     const [arrow, setArrow] = useState(RightArrow);
 
@@ -24,23 +19,23 @@ export const Card = ({imgSrc,
 
     return (
         <>
+        {console.log(data)}
         <Overlay isOpen={isOpen} onClose={toggleOverlay}> 
             <h2>Content in Overlay</h2>
         </Overlay>
 
-        {/* <div className="card-pp-div"> */}
         <div className="pp-container">
             <div className="card-profile-mask">
-                <img className="card-profile-picture" src={imgSrc} alt ={imgAlt}></img>
+                <img className="card-profile-picture" src={data.imgSrc} alt ={data.imgAlt}></img>
             </div>
         </div>
-        {/* </div> */}
+
         <div className="card-content">
-            <h2 className="card-name">{name}</h2>
-            <p className="darkgray-text"> {role}</p>
-            <p className="darkgray-text"> {workHistory}</p>
+            <h2 className="card-name">{data.name}</h2>
+            <p className="darkgray-text"> {data.role}</p>
+            <p className="darkgray-text"> {data.workHistory}</p>
             <div className="card-foot">
-                {skills.map( (skill, index) => {
+                {data.skills.map( (skill, index) => {
                     return(
                         <Tag key= {index} category={skill} isRed ={false}/>
                         )

@@ -29,7 +29,6 @@ function App() {
     // Replace this with actual data fetching logic
     const fetchData = async () => {
       try {        
-        
         // Update state with fetched data
         setAlumniData(alumniData);
       } catch (error) {
@@ -138,11 +137,10 @@ function App() {
           <div className="white-space">         </div>
           <div className="cards">
               {
-                alumniDataState.map( alum => {
+                alumniDataState.map(alum => {
                   return(
                     <div className="card" key={alum.id}>
-                    <Card name={alum.name} imgSrc={alum.imgSrc} imgAlt={alum.imgAlt}
-                          role={alum.role} workHistory={alum.workHistory} skills= {alum.skills} />
+                      <Card data={alum}/>
                     </div> 
                   )
                 })

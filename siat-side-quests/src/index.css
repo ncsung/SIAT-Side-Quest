@@ -393,8 +393,14 @@ section{
 
 
 @media (max-width: 1644px){
+    .section-disc{
+        padding: 2em 2em 1.5em 2em; 
+    }
     .white-space{
         display: none;
+    }
+    .section2-panel{
+        padding-bottom: 2em;
     }
 }
 
