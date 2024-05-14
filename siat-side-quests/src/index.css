@@ -322,7 +322,8 @@ section{
 }
 
 .title-pad{
-    padding-bottom: 1em;
+    padding-bottom: 0.3em;
+    margin-left: .2em;
 }
 
 @media(max-width: 974px){
