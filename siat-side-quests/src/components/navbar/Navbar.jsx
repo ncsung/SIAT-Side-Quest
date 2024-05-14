@@ -15,7 +15,7 @@ export const Navbar = () => {
     
       </a>
       <a href="#inspiration" className="nav-item">
-        
+
           <p className = "nav-item-number">02</p>
           <p className="red-text nav-text"> Project Inspiration </p>
         

@@ -4,7 +4,7 @@
   flex-flow: column;
   top: 0;
   align-self: flex-start;
-  width: 10vw;
+  width: 11vw;
   justify-items: left;
   align-items: start;
   margin-right: 1px;
@@ -43,6 +43,10 @@
   text-decoration: none;
   transition: background-color 0.3s ease-in; 
   /* border-right: 1px var(--primary-red); */
+}
+
+.nav-item > p{
+  width: 80%
 }
 
 .nav-item:hover {
