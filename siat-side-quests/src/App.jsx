@@ -58,7 +58,7 @@ function App() {
           </div>
 
           <div className="banner-wrapper">
-            <div className="banner-section1 section">
+            <div className="banner-section1 section-disc">
               <motion.div
                 className= "banner-section1-content"
                 initial={{ y: "40px", opacity: 0 }}
@@ -74,7 +74,7 @@ function App() {
             </div>
 
             <div className="banner-section2">
-              <div className="section2-panel left-panel section">
+              <div className="section2-panel left-panel section-disc">
               <motion.div
                 className= "banner-section2-content-left"
                 initial={{ y: "40px", opacity: 0 }}
@@ -88,7 +88,7 @@ function App() {
                 </motion.div>
               </div>
 
-              <div className="section2-panel right-panel section">
+              <div className="section2-panel right-panel section-disc">
               <motion.div
                 className="section2-content"
                 initial={{ y: "40px", opacity: 0 }}
@@ -127,18 +127,15 @@ function App() {
           </div>
           </section>
           <section id="alums">
-          <div className="resource cards-intro">
-              <div className="resource-disc section">
+          <div className="resource cards-intro section-disc">
                 <div>
-                  <p className = "resource-category-title red-text">Featured Alumni & Students</p>
+                  <p className = "resource-category-title red-text title-pad">Featured Alumni & Students</p>
                   <p className= "large red-text"> Explore the paths and resources of featured alumni and senior students in this career.</p >
                 </div>
-              </div>
           </div>
       
         <div className="cards-section">
-          <div className="white-space">
-          </div>
+          <div className="white-space">         </div>
           <div className="cards">
               {
                 alumniDataState.map( alum => {

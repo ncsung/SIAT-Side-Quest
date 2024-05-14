@@ -62,8 +62,8 @@
   mask-repeat: no-repeat;
   mask-position: center;
   mask-clip: no-clip;
-  mask-size: 85%;
-  margin-top: 10%;
+  /* mask-size: 84%; */
+  margin-top: 2.8em;
   padding: 1em;
 }
 

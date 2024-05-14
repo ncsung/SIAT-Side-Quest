@@ -19,17 +19,17 @@ export const ResourceFrame = ({title, description}) =>
       }, []);
     return(
         <>
-        <div className="resource section">
+        <div className="resource section-disc">
               <div className="resource-disc">
-                <p className = "resource-category-title red-text">{title}</p>
+                <p className = "resource-category-title red-text title-pad">{title}</p>
                 <p className= "large red-text"> {description}</p >
               </div>
  
           <div className="resource-frame">
             <div className="resource-three-col col-header">
-                <p className="three-col-child resources-tag">Resources</p>
-                <p className="three-col-child category-tag">Category</p>
-                <p className="three-col-child right-aligned endorsement-tag">Alumni Endorsement</p>
+                <p className="three-col-child resources-tag darkgray-text">Resources</p>
+                <p className="three-col-child category-tag darkgray-text">Category</p>
+                <p className="three-col-child right-aligned endorsement-tag darkgray-text">Alumni Endorsement</p>
             </div>
             <div className="cards-resources-div">
                 {resourceDataState.map(resource => {

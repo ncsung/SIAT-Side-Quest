@@ -102,8 +102,6 @@ p{
     margin: 0;
 }
 
-
-
 p.right-aligned{
     text-align: right;
 }
@@ -214,7 +212,7 @@ section{
     height: auto;
 }
 
-.section{
+.section-disc{
     display: flex;
     padding: 4em var(--leftofNav-padding) 4em var(--leftofNav-padding); 
 }
@@ -319,16 +317,17 @@ section{
     color: var(--primary-darkgray);
 }
 
-
 .similiar-career-link{
     padding-top: 1.1em;
 }
 
+.title-pad{
+    padding-bottom: 1em;
+}
+
 @media(max-width: 974px){
-
-    .section{
+    .section-disc{
         padding: 4em 2em 4em 2em; 
-
     }
     .banner-section2{
         flex-direction: column;
@@ -371,6 +370,10 @@ section{
     width: 100%;
 }
 
+.cards-section{
+    display: flex;
+}
+
 .cards{
     display: flex;
     flex-wrap: wrap;
@@ -380,19 +383,22 @@ section{
 }
 
 .white-space{
-    width: 6.3vw;
+    margin-right:auto;
+    width: 6em;
     background-color: var(--primary-white);
-    border:1px var(--primary-red);
+    border-right:1px solid var(--primary-red);
+    border-top:1px solid var(--primary-red);
 }
 
 
-/* 
+
 @media (max-width: 1644px){
     .white-space{
-        width: 0;
+        display: none;
     }
 }
 
+/* 
 @media (max-width: 1445px){
     .banner-section1{
         height: 37%; 
