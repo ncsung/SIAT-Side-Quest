@@ -3,6 +3,7 @@ import { motion , AnimatePresence} from "framer-motion";
 import Tag from "../Tag.jsx"
 import "./style.css";
 import { GoArrowLeft } from "react-icons/go";
+import { PiArrowUpRight } from "react-icons/pi";
 
 
 const Overlay = ({ isOpen, onClose, children, data}) => {
@@ -33,12 +34,11 @@ const Overlay = ({ isOpen, onClose, children, data}) => {
               <div className="overlay-content" onClick={handleClick}>
                 <div className="alumni-social-nav">
                   <GoArrowLeft onClick= {onClose} style={{
-                    color: "#be2d2d"}} size= {20} className=""/>
-
+                    color: "#be2d2d"}} size= {20} className="back-button"/>
                   <ul>
-                    <a href='#'> social 1</a>
-                    <a href='#'> social 1</a>
-                    <a href='#'> social 1</a>
+                    <a href='#'> social 1 <PiArrowUpRight size= {15}/></a>
+                    <a href='#'> social 2 <PiArrowUpRight size= {15}/></a>
+                    <a href='#'> social 3 <PiArrowUpRight size= {15}/></a>
                   </ul>
                   
                 </div>
@@ -66,13 +66,15 @@ const Overlay = ({ isOpen, onClose, children, data}) => {
                             <h2 className="exp-big-header">About</h2>
                           </div>
                           <div className="about-content expanded-left-padding content-padding">
-                            <p className= "about-me content-padding">While volunteering for FROSH, an event for first-years, I was approached by a fellow videographer about a freelance opportunity.
+                            <p className= "about-me content-padding">While volunteering for FROSH, an event for first-years,
+                             I was approached by a fellow videographer about a freelance opportunity.
                             You never know what you might get from even a small interaction. </p>
                             <h3>PREVIOUSLY WORKED:</h3> 
                             <ul>
                               <li>item1 </li>
                               <li>item2 </li>
                               <li>item3 </li>
+
                             </ul>
                             <h3>FAVOURITE CLASSES</h3> 
                             <ul>

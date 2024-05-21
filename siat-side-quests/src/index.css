@@ -157,6 +157,14 @@ p.gray-tag{
     padding: 3px 7px 3px 7px;
 }
 
+.left-border{
+    border-left: 1px solid var(--primary-red);
+}
+
+.right-border{
+    border-right: 1px solid var(--primary-red);
+}
+
 ul{
     list-style: none;
 }
