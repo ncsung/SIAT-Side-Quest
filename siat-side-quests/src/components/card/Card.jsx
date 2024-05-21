@@ -19,8 +19,7 @@ export const Card = ({data
 
     return (
         <>
-        {console.log(data)}
-        <Overlay isOpen={isOpen} onClose={toggleOverlay}> 
+        <Overlay isOpen={isOpen} onClose={toggleOverlay} data={data}> 
             <h2>Content in Overlay</h2>
         </Overlay>
 
@@ -43,8 +42,8 @@ export const Card = ({data
                 <div className="learn-more">
                     <a onClick={toggleOverlay}> <p className= "lightgray-text learn-more">View resources</p></a>
                     <BsArrowRight style={{
-      color: "#3a3a3a"
-    }}/>
+                                            color: "#3a3a3a"
+                                        }}/>
                 </div>
             </div> 
         </div>    

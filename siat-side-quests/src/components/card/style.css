@@ -72,30 +72,31 @@
 
   }
 }
+
 .card-content{
   padding: 2.3em 2em 1em 2em;
 }
 
+
+/*************************************** OVERALAY/CARD EXPANSION *********************************/
+
 .overlay-frame{
   position: fixed;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100vh;
   background: rgba(66, 66, 66, 0.7);
   z-index: 1000;
 }
 
 .overlay{
-  margin: 70px auto;
-  padding: 20px;
-  background-color: rgb(250,249,249);
-  width: 70vw;
-  height: 70vh;
+  background-color: var(--primary-red);
+  width: 60%;
+
 }
 
 @media (max-width: 1503px){
@@ -112,3 +113,152 @@
   }
 
 }
+
+.content-padding{
+  padding-top: 1.6em;
+  padding-bottom: 1.3em;
+}
+
+.expanded-left-padding{
+  padding-left: var(--leftPadding-ext-card);
+}
+
+.overlay-content{
+  min-height: fit-content;
+  border: 1px solid green;
+}
+
+.alumni-social-section{
+  display: flex;
+  flex-direction: row;
+  height: 7vh;
+  background-color: var(--primary-white);
+  border-radius: 5px; 
+  margin: 1px 1px 0 1px;
+}
+
+.alumni-social-nav{
+  display: flex;
+  flex-direction: row;
+  height: 7vh;
+  background-color: var(--primary-white);
+  border-radius: 5px; 
+  margin: 1px 1px 0 1px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: var(--leftPadding-ext-card);
+  padding-right: var(--leftPadding-ext-card);
+}
+
+.alumni-social-nav > ul > a{
+  padding-left: 2em;
+} 
+
+.expanded-card-banner{
+  display: flex;
+  flex-direction: row;
+  background-color: var(--primary-white);
+  height: 20rem;
+  border-radius: 5px; 
+  margin-top: 1px;
+
+}
+
+.card-profile-mask-expanded{
+  -webkit-mask-image: url(../../assets/profilemask.svg);
+  mask-image: url(../../assets/profilemask.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-clip: no-clip;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-profile-picture-expanded{
+  max-width: 27em;
+}
+
+.card-details-exp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card-skills-expanded{
+  display: flex;
+  flex-direction: row;
+  padding-top: 1em;
+  gap: 1em;
+}
+
+.about-resource-section{
+  display: flex;
+  direction: row;
+  margin-top: 1px;
+}
+
+.about-section{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.resource-section{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.about-header{
+  /* border: 1px solid blue; */
+  background-color: var(--primary-white);
+  border-radius: 5px;
+}
+
+.resource-header{
+  /* border: 1px solid blue; */
+  background-color: var(--primary-white);
+  border-radius: 5px;
+  margin-left: 1px;
+}
+
+.exp-big-header{
+  font-family: "ABCMonumentGrotesk-Regular";
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.about-content{
+  background-color: var(--primary-white);
+  /* border: 1px solid purple; */
+  border-radius: 5px;
+  margin-top: 1px;
+  flex-grow: 1;
+}
+
+.resource-content-expanded-card{
+  background-color: var(--primary-white);
+  /* border: 1px solid purple; */
+  border-radius: 5px;
+  margin-top: 1px;
+  margin-left: 1px;
+  flex-grow: 1;
+}
+
+.about-content > ul{
+ padding-bottom: 0.5rem;
+}
+
+.resource-content-expanded-card > ul{
+  padding-bottom: 0.5rem;
+ }
+
+ .about-me{
+    max-width: 23.8em;
+ }
+ 

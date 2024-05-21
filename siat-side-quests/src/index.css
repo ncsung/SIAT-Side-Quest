@@ -1,11 +1,10 @@
-/* TODO: see if there is a better way to reduce redundant code */
-
 :root {
     --primary-red: #be2d2d;
     --primary-white: rgba(250, 249, 249, 1);
     --primary-lightgray: rgba(85, 85, 85, 1);
     --primary-darkgray: rgba(58, 58, 58, 1);
     --leftofNav-padding: 7.3em;
+    --leftPadding-ext-card: 3.8em;
 }
 
 * {
@@ -80,7 +79,10 @@ h2{
 }
 
 h3{
+    font-family: "ESRebondGrotesqueTRIAL-Semibold";
+    font-size: 1.25rem;
     margin:0;
+    color: var(--primary-red);
 }
 
 
