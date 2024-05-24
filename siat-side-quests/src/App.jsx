@@ -139,9 +139,10 @@ function App() {
               {
                 alumniDataState.map(alum => {
                   return(
-                    <div className="card" key={alum.id}>
+                    <motion.div className="card" key={alum.id}>
                       <Card data={alum}/>
-                    </div> 
+                    </motion.div > 
+
                   )
                 })
               }
